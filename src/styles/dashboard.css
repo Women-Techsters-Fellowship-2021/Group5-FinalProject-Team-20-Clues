@@ -1,0 +1,50 @@
+/* import layout component style */
+@import './component/layout/navbar.css';
+@import './component/layout/sidebar.css';
+@import './component/layout/main.css';
+
+
+/* styling scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 6px;
+}
+/* #313A63 */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 05px #a5aaad;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background: #BFCAFF;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #49438D;
+}
+
+
+/* general styling */
+
+.dashboard {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 
+        "sidebar nav nav nav"
+        "sidebar main main main";
+}
+
+@media only screen and (max-width: 978px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 3fr;
+        grid-template-areas: 
+            "nav"
+            "main";
+    }
+}
+
+
+
+

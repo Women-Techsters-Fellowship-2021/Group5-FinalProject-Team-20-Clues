@@ -1,11 +1,11 @@
-
+import Dashboard from "./layouts/dashboard";
 
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <p>
-        Hello World!, Welcome
+        <Dashboard />
       </p>
     </div>
   );
