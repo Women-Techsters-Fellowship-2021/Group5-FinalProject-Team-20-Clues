@@ -3,7 +3,6 @@ main {
     grid-area: main;
     overflow-y: auto;
 }
-
 .main__container {
     padding: 20px 35px;
 }
@@ -11,10 +10,6 @@ main {
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
-    /* align-items: center; */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between; */
 }
 .greetings p {
     margin: 15px 0;
@@ -25,7 +20,9 @@ main {
     margin-top: 40px;
 }
 .greetings .user-mood span {
+    display: inline-block;
     margin-right: 20px;
+    margin: 0 20px 15px 0;
     font-size: 12px;
     line-height: 18px;
     padding: 7px 30px;
@@ -49,7 +46,6 @@ main {
 .excited {
     background: #DFE5FF;
 }
-
 .tips {
     width:35%;
 }
@@ -76,7 +72,7 @@ main {
 /* card sections */
 .appointment,
 .programs {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .section-intro {
     display: flex;
@@ -118,17 +114,24 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .card-body p {
-    margin: 15px 0;
+    margin: 18px 0;
 }
 .card-footer {
-    display: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 15px;
-    align-self: flex-end;
 }
-.card-footer div {
+.Card-footer-icons img {
+    margin-right: 10px;
+}
+.card-footer .loading-icons{
+    display: inherit;
+}
+.card-footer .loading-icons div {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -175,8 +178,20 @@ main {
         flex-direction: column;
     }
     .tips-icon {
+        font-size: 30px;
+        color: #49438D;
+        margin-right: 0;
+         margin-bottom: 15px;
+    }
+}
+
+/* @media (max-width: 1200px){
+    .tips-content {
+        flex-direction: column;
+    }
+    .tips-icon {
     font-size: 30px;
     color: #49438D;
     margin-right: 20px;
 }
-}
+} */

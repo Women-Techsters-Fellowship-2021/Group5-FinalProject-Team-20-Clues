@@ -1,21 +1,21 @@
 .navbar {
-  background: #ffffff;
-  grid-area: nav;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 30px 0 30px;
-  border-bottom: 1px solid lightgray;
+    background: #ffffff;
+    grid-area: nav;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    border-bottom: 1px solid lightgray;
 }
 
 .nav_icon {
-  display: none;
+    display: none;
 }
 .nav_icon > .bars {
-  font-size: 28px;
-  color: #a5aaad;
-  margin-right: 15px;
+    font-size: 28px;
+    color: #a5aaad;
+    margin-right: 15px;
 }
 
 .nav-search {
@@ -44,28 +44,15 @@
 }
 .navbar__right {
     margin-left: 13px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar__right > a {
-  margin-left: 20px;
-  text-decoration: none;
+.navbar__right  .user-info {
+    margin:0 20px 0 20px;
 }
 
 .navbar__right h4 {
   margin-top: 10px;
-}
-
-@media only screen and (max-width: 978px) {
-  .nav_icon {
-    display: inline;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .navbar__left {
-    display: none;
-  }
 }

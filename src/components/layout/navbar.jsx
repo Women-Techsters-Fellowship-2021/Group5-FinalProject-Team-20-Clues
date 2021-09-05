@@ -14,6 +14,7 @@ const Navbar = ({sidebarOpen, openSidebar}) => {
             </div>
             
             <div className="navbar__right">
+                <img src="images/icons/notification.svg" alt="" />
                 <div className="user-info">
                     <p className='user-name'>Jesutofunmi Adewole</p>
                     <h4 className='user-role'>User</h4>

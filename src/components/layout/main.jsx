@@ -45,6 +45,37 @@ const Main = () => {
                                 </div>
                             </div>
                             <div className="card-body">
+                                <div className="appointment-date">
+                                    <p>Next appointment</p>
+                                    <h3>25 June 2021,</h3>
+                                </div>
+                                <div className="appointment-time">
+                                    <p>Time</p>
+                                    <h3>12:00 PM</h3>
+                                </div>
+                            </div>
+                            <div className="card-footer">
+                                <div className='Card-footer-icons'>
+                                    <img src="images/icons/video.svg" alt="video-icon" />
+                                    <img src="images/icons/call.svg" alt="call-icon" />
+                                </div>
+                               <div className='loading-icons'>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                               </div>
+                            </div>
+                        </div>
+
+                        <div className="appointment-card">
+                            <div className="card-header">
+                                <img src="images/dashboard/doctor.png" alt="" />
+                                <div className="doctor-detail">
+                                    <h3 className='doctor-name'>Dr Emila Ken</h3>
+                                    <p className='doctor-role'>Psycology, New York</p>
+                                </div>
+                            </div>
+                            <div className="card-body">
                                 <div className="appointment">
                                     <p>Next appointment</p>
                                     <h3>25 June 2021,</h3>
@@ -55,9 +86,15 @@ const Main = () => {
                                 </div>
                             </div>
                             <div className="card-footer">
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                                <div className='Card-footer-icons'>
+                                    <img src="images/icons/video.svg" alt="video-icon" />
+                                    <img src="images/icons/call.svg" alt="call-icon" />
+                                </div>
+                               <div className='loading-icons'>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                               </div>
                             </div>
                         </div>
 
@@ -79,25 +116,16 @@ const Main = () => {
                                     <h3>12:00 PM</h3>
                                 </div>
                             </div>
-                        </div>
-
-                        <div className="appointment-card">
-                            <div className="card-header">
-                                <img src="images/dashboard/doctor.png" alt="" />
-                                <div className="doctor-detail">
-                                    <h3 className='doctor-name'>Dr Emila Ken</h3>
-                                    <p className='doctor-role'>Psycology, New York</p>
+                            <div className="card-footer">
+                                <div className='Card-footer-icons'>
+                                    <img src="images/icons/video.svg" alt="video-icon" />
+                                    <img src="images/icons/call.svg" alt="call-icon" />
                                 </div>
-                            </div>
-                            <div className="card-body">
-                                <div className="appointment">
-                                    <p>Next appointment</p>
-                                    <h3>25 June 2021,</h3>
-                                </div>
-                                <div className="appointment">
-                                    <p>Time</p>
-                                    <h3>12:00 PM</h3>
-                                </div>
+                               <div className='loading-icons'>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                               </div>
                             </div>
                         </div>
                     </div>
@@ -116,8 +144,8 @@ const Main = () => {
                                 <h3>25 June 2021,</h3>
                             </div>
                             <div className="program-goals">
-                                <h3>setting Goals</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, ratione.</p>
+                                <h3>Setting Goals</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id sit.</p>
                             </div>
                         </div>
                         <div className="program-card">
@@ -126,8 +154,8 @@ const Main = () => {
                                 <h3>25 June 2021,</h3>
                             </div>
                             <div className="program-goals">
-                                <h3>setting Goals</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, ratione.</p>
+                                <h3>Setting Goals</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id sit.</p>
                             </div>
                         </div>
                         <div className="program-card">
@@ -136,8 +164,8 @@ const Main = () => {
                                 <h3>25 June 2021,</h3>
                             </div>
                             <div className="program-goals">
-                                <h3>setting Goals</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, ratione.</p>
+                                <h3>Setting Goals</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id sit.</p>
                             </div>
                         </div>
                     </div>
