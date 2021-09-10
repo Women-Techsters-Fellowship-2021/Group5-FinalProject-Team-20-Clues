@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Posts from './pages/Blog';
 import Register from './pages/Register';
 import Login from './pages/Login';
 
 // import from components
-import Navbar from './components/navbar';
 import StateProvider from './components/stateprovider';
 import './styles/main.css';
 import './styles/register.css';
+import './pages/Resetpassword';
+import Resetpassword from './pages/Resetpassword';
 
 
 
@@ -16,7 +16,7 @@ const App = () => {
 	return (
 		<StateProvider>
 			<Router>
-				<Navbar />
+				
 
 				<Switch>
 					{/* render Register Component when we hit /register */}
@@ -30,13 +30,10 @@ const App = () => {
 					</Route>
 
 					{/* render Home Component when we hit /home */}
-					<Route exact path='/home'>
-						<Home />
+					<Route exact path='/resetpassword'>
+						<Resetpassword />
 					</Route>
-					{/* render Post Component when we hit /post */}
-					<Route exact path='/post'>
-						<Posts />
-					</Route>
+					
 
 					{/* render Home Component when we hit / */}
 					<Route exact path='/'>

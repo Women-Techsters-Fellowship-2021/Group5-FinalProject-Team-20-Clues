@@ -32,12 +32,17 @@ const Login = () => {
 
     return ( 
         <div className="signin-card">
-            <h2 className='signin-title'>LOGIN</h2>
-			<h2>Welcome</h2>
+			<h2>Welcome to LULL</h2>
+             <p className='signup-contents'>Pick up from where you left off.</p>
             <form action="#" className='signin-form' onSubmit={handleSubmit(login)}>
+
+                 <label for="email">Email</label>
                 <input type="email" name='email' placeholder='Email'  { ...register('email')} />
+
+                 <label for="password">Password</label>
                 <input type="password" name='password' placeholder='Password' { ...register('password')} />
-                         <a href="">Forgot Password</a>
+                         <a href="/resetpassword">Forgot Password</a>
+                         
                 <button className= 'signin-btn' type='submit'><Link to= '/homepage' />Sign In</button>
             </form>
                     
