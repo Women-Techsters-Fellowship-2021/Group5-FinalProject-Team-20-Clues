@@ -2,23 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* import layout component style */
+@import './styles/component/navbar.css';
+@import './styles/component/sidebar.css';
+
 /* layout */
-@import './styles/dashboard.css';
+@import './styles/layout/portal.css';
+
+/* pages */
+@import './styles/pages/dashboard.css';
+@import './styles/pages/therapists.css';
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: #fff;
-  overflow-x: hidden;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #fff;
+    overflow-x: hidden;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
+}
+ul {
+  list-style: none;
 }

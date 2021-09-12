@@ -1,0 +1,100 @@
+.therapist-section {
+    padding: 20px 30px;
+}
+.categories-intro {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #000;
+    text-transform: uppercase;
+}
+.therapist-list {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.therapist {
+    text-align: center;
+    width: 30%;
+}
+.therapist img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.therapist h4{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    margin-top: 19px;
+}
+.therapist p{
+    font-family: Poppins;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+}
+.online-doctors .online-doctors-list{
+    margin: 20px 0;
+}
+.online-doctors-card {
+    margin-bottom: 16px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.online-doctors-details h4{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #313A63;
+}
+.online-doctors-details p{
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #313A63;
+}
+.online-doctors-ratings {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+}
+.rating-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.online-doctors-card button{
+    background: #49438D;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Poppins;font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .therapist-list {
+        flex-direction: column;
+    }
+    .therapist {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}

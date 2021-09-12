@@ -1,8 +1,4 @@
-main {
-    background: #f3f4f6;
-    grid-area: main;
-    overflow-y: auto;
-}
+
 .main__container {
     padding: 20px 35px;
 }
@@ -11,27 +7,40 @@ main {
     flex-direction: row;
     justify-content: space-between;
 }
+.greetings h4 {
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #9D9C9C;
+}
 .greetings p {
-    margin: 15px 0;
+    margin: 8px 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 1.5x;
+    color: #9D9C9C;
+    
 }
 .greetings .user-mood {
-    margin-top: 40px;
+    margin-top: 31px;
 }
 .greetings .user-mood span {
     display: inline-block;
-    margin-right: 20px;
     margin: 0 20px 15px 0;
-    font-size: 12px;
-    line-height: 18px;
     padding: 7px 30px;
     color: #fff;
     box-shadow: 0px 15px 30px rgba(123, 123, 123, 0.2);
     border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.5;
 }
 .greetings .user-mood span:last-child {
     margin-right: 0px;
+    color: #313A63;
 }
 
 .happy {
@@ -41,7 +50,7 @@ main {
     background: #bfcaff;
 }
 .neutral {
-    background: #313a63;border-radius: 10px;
+    background: #313a63;
 }
 .excited {
     background: #DFE5FF;
@@ -50,8 +59,10 @@ main {
     width:35%;
 }
 .tips h3{
+    font-weight: bold;
+    color: #313A63;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 1.5;
     color: #313A63;
 }
 .tips-content {
@@ -65,8 +76,10 @@ main {
     margin-right: 20px;
 }
 .tips-content p{
+    color: #49438D;
+    font-family: Poppins;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 1.5;
     color: #49438D;
 }
 /* card sections */
@@ -79,12 +92,23 @@ main {
     justify-content: space-between;
     align-items: center;
 }
+.section-intro h3{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #313A63;
+}
 .section-intro button {
     color: #49438d;
     border: none;
     outline: none;
     font-size: 16px;
     line-height: 24px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #49438D;
 }
 .card-section {
     display: grid;
@@ -107,17 +131,41 @@ main {
 .card-header img {
     margin-right: 15px;
 }
-.card-header .doctor-detail p {
-    margin: 15px 0 0 0;
+.doctor-detail .doctor-name{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #313A63;
+}
+.doctor-detail .doctor-role {
+    margin: 8px 0 0 0;
+    font-family: Poppins;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #313A63;
 }
 .card-body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .card-body p {
-    margin: 18px 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #313A63;
+}
+.card-body h3 {
+    margin: 4px 0 18px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #313A63;
 }
 .card-footer {
     display: flex;
@@ -139,23 +187,33 @@ main {
     margin-right: 10px;
 }
 .program-card {
+    background: #c4c4c4;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
     border-radius: 10px;
-    background: #fff;
     box-shadow: 0px 15px 30px rgba(123, 123, 123, 0.2);
-    padding: 15px;
+    /* padding: 15px; */
 }
 .program-card .program-details {
-    background: #c4c4c4;
+    visibility: hidden;
 }
 .program-card .program-goals {
-    padding: 10px;
+    background-color: #fff;
+    padding: 15px;
 }
-.program-card .program-goals p {
-    margin: 10px 0;
+.program-card .program-goals h3 {
+    margin-top: 19px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.program-card .program-goals p{
+    margin-top: 8px;
+    font-family: Poppins;
+    font-size: 12px;
+    line-height: 1.5;
 }
 
 @media only screen and (max-width: 855px) {

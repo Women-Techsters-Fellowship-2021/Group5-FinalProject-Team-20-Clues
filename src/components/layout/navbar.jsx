@@ -14,16 +14,17 @@ const Navbar = ({sidebarOpen, openSidebar}) => {
             </div>
             
             <div className="navbar__right">
-                <img src="images/icons/notification.svg" alt="" />
+                <img src="../images/icons/notification.svg" alt="notification-image" />
+                {/* <img src="../images/icons/bell.svg" alt="notification-image" /> */}
                 <div className="user-info">
                     <p className='user-name'>Jesutofunmi Adewole</p>
-                    <h4 className='user-role'>User</h4>
+                    <h6 className='user-role'>User</h6>
                 </div>
                 <a href="#!">
-                    <img width="30" src='images/dashboard/avatar.png' alt="avatar" />
+                    <img width="30" src='../images/dashboard/avatar.png' alt="avatar" />
                 </a>
             </div>
-    </nav>
+        </nav>
     )
 }
 

@@ -1,14 +1,17 @@
-import Dashboard from "./layouts/dashboard";
-
+import { Switch, Route, BrowserRouter } from 'react-router-dom'
+import { routes } from './routes'
+import Portal from './layouts/Portal';
 
 function App() {
-  return (
-    <div>
-      <p>
-        <Dashboard />
-      </p>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div>
+                <Switch>
+                    <Route path={ routes.Portal} component={ Portal } />
+                </Switch>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;

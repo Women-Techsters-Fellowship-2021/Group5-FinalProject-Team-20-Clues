@@ -32,7 +32,8 @@
 .nav-search input::placeholder{
     padding-left: 20px;
     color: #a5aaad;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.16;
 }
 .search-icon {
     display: inline;
@@ -53,6 +54,35 @@
     margin:0 20px 0 20px;
 }
 
-.navbar__right h4 {
-  margin-top: 10px;
+.navbar__right h6 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333333;
 }
+.navbar__right p {
+    font-family: Poppins;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #5E5E5E;
+}
+
+
+@media only screen and (max-width: 978px) {
+    /* .portal {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 3fr;
+        grid-template-areas: 
+            "nav"
+            "main";
+    } */
+    .nav_icon {
+        display: block;
+    }
+}
+
+
+
+
+
