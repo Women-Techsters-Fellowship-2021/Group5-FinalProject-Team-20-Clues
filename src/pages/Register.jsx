@@ -61,28 +61,27 @@ const Register = () => {
 
     return (  
         <div className="sign-up">
-            <div>
-                <img src="./images/main.svg" alt="resetpassword" />
+            <div className="reg-left">
+                {/* <img src="./images/main.svg" alt="resetpassword" /> */}
             </div> 
+
+            <div className="reg-right">
             <div className="signup-card">
                 <h2>Welcome to LULL</h2>
                 <p className='signup-contents'>Create your account to get started</p>
                 
                 <form action="#" className='signup-form' onSubmit={handleSubmit(registerUser)}>
                     <div>   
-                      <label for="fullname">Name</label>
                     <input type="text" id="fullname" name="firstname" placeholder='Full Name' { ...register('fullname', { required: true}) } />
                     {/* {errors.fullname && <p>Fullname required</p>} */}   
                     </div>
 
                    <div>
-                    <label for="email">Email</label>
                     <input type="email" name='email' id='email' placeholder='Email' { ...register('email', { required: true, validate: isEmailValid})} />
                     {/* {errors.email && <p>{errors.email}</p>} */}
                    </div>
 
                     <div>
-                    <label for="password">Password</label>
                     <input type="password" name='password' id='password' placeholder='Password' { ...register('password', { required: true, validate: isPasswordValid})}   />
                     {/* {errors.password && <p>{errors.password}</p>} */}
                     </div>
@@ -94,6 +93,8 @@ const Register = () => {
                     Already have an account? <a href="/login"> Login</a> 
                 </div>
             </div>
+            </div>
+
         </div>
     );
 }

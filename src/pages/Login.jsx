@@ -30,22 +30,22 @@ const Login = () => {
 
     return (  
         <div className="sign-in">
-            <div>
-                <img src="./images/main.svg" alt="resetpassword" />
+            <div className="reg-left">
+                {/* <img src="./images/main.svg" alt="resetpassword" /> */}
             </div>
-
+            {/* login right */}
+        <div className="reg-right">
             <div className="signin-card">
+
                 <h2>Welcome to LULL</h2>
                 <p className='signup-contents'>Create your account to get started</p>
 
             <form action="#" className='signin-form' onSubmit={handleSubmit(login)}>
                  <div>
-                 <label for="email">Email</label>
                  <input type="email" name='email' placeholder='Email'  { ...register('email')} />
                   </div>
 
                   <div>
-                 <label for="password">Password</label>
                  <input type="password" name='password' placeholder='Password' { ...register('password')} />
                          <a href="/resetpassword">Forgot Password</a>
                   </div> 
@@ -55,6 +55,7 @@ const Login = () => {
             <div className="signin-alt">
                 Don't have an account? <a href="./register"> Create account</a> 
             </div>
+        </div>
         </div>
      </div>
     );
