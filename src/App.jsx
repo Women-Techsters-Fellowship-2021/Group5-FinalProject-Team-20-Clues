@@ -3,9 +3,10 @@ import Home from './pages/Home';
 import Register from './pages/Register';
 import Login from './pages/Login';
 
+
 // import from components
 import StateProvider from './components/stateprovider';
-import './styles/main.css';
+// import './styles/main.css';
 import './styles/register.css';
 import './pages/Resetpassword';
 import Resetpassword from './pages/Resetpassword';
