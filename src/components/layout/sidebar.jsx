@@ -74,49 +74,49 @@ const Sidebar = ({sidebarOpen, closeSidebar}) => {
                     })}
                 </ul> */}
                 <div className="sidebar__items">
-                    <NavLink to={routes.Dashboard} className="sidebar__link">
+                    <NavLink to={routes.Dashboard} className="sidebar__link" activeClassName='active'>
                         <MdDashboard  className='sidebar-menu-icon'/>
                         Dashboard
                     </NavLink>
                 </div>
                 <div className="sidebar__items">
-                    <NavLink to={routes.Therapist} className="sidebar__link">
+                    <NavLink to={routes.Therapist} className="sidebar__link" activeClassName='active'>
                         <HiOutlineUsers className='sidebar-menu-icon'/> 
                         Therapists
                     </NavLink>
                 </div>
                 <div className="sidebar__items">
-                    <NavLink to={routes.Schedule} className="sidebar__link">
+                    <NavLink to={routes.Schedule} className="sidebar__link" activeClassName='active'>
                         <FaRegCalendarAlt className='sidebar-menu-icon' />
                         Schedule
                     </NavLink>
                 </div>
                 <div className="sidebar__items">
-                    <NavLink to={routes.Message} className="sidebar__link">
+                    <NavLink to={routes.Message} className="sidebar__link" activeClassName='active'>
                         <FaRegEnvelope className='sidebar-menu-icon'/> 
                         Message
                     </NavLink>
                 </div>
                 <div className="sidebar__items">
-                    <NavLink to={routes.Programs} className="sidebar__link">
+                    <NavLink to={routes.Programs} className="sidebar__link" activeClassName='active'>
                         <FaRegCalendarTimes className='sidebar-menu-icon'/> 
                         Programs
                     </NavLink>
                 </div>
                 <div className="sidebar__items">
-                    <NavLink to={routes.Settings} className="sidebar__link">
+                    <NavLink to={routes.Settings} className="sidebar__link" activeClassName='active'>
                         <IoSettingsOutline className='sidebar-menu-icon'/>
                         Settings
                     </NavLink>
                 </div>  
                 <div className="sidebar__items">
-                    <NavLink to={routes.MyStory} className="sidebar__link">
+                    <NavLink to={routes.MyStory} className="sidebar__link" activeClassName='active'>
                         <HiOutlineUsers className='sidebar-menu-icon'/> 
                         My Story
                     </NavLink>
                 </div>
                 <div className="sidebar__items">
-                    <NavLink to={routes.LogOut} className="sidebar__link">
+                    <NavLink to={routes.LogOut} className="sidebar__link" activeClassName='active'>
                         <FiLogOut className='sidebar-menu-icon'/>
                         Log out
                     </NavLink>

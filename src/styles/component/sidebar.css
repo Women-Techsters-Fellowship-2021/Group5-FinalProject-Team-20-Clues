@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
 }
-.sidebar__link:hover {
+.active {
     background: #dfe5ff;
     border-radius: 10px;
     color: #49438d;
