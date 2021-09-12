@@ -19,8 +19,6 @@ const Resetpassword = () => {
           event.preventDefault();
       };
 
-
-    
     return ( 
             <div className="sign-in">
             <div>
@@ -33,16 +31,15 @@ const Resetpassword = () => {
             <form action="#" className='signin-form' onSubmit>
                  <div>
                  <label for="email">Email</label>
-                 <input type="email" name='email' placeholder='Email' />
-                 
-
+                 <input type="email" name='email' placeholder='Email'value={email} onChange />
+                 </div>
+             <div>
                  <ul>
                  <li><button className= 'resetpassword-btn' type='submit'><Link to= '/login' />Cancel</button></li>
                 <li><button className= 'resetpassword' type='submit'><Link to= '/login' />Reset</button></li>
                 </ul>
                 </div>
             </form>
-         
         </div>
         </div>
     );
