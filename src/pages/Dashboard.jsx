@@ -64,7 +64,6 @@ const Dashboard = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className="appointment-card">
                         <div className="card-header">
                             <img src="../images/dashboard/doctor1.png" alt="" />
@@ -95,7 +94,6 @@ const Dashboard = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className="appointment-card">
                         <div className="card-header">
                             <img src="../images/dashboard/doctor1.png" alt="" />
@@ -126,8 +124,7 @@ const Dashboard = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                
+                </div> 
             </section>
 
             <section className='programs'>
@@ -137,39 +134,38 @@ const Dashboard = () => {
                 </div>
                 <div className="card-section">
                     <div className="program-card">
-                        <div className="program-details">
-                            <p>Next appointment</p>
-                            <h3>25 June 2021,</h3>
+                        <div className="program-img">
+                            <img src="../images/dashboard/programs.png" alt="" />
                         </div>
-                        <div className="program-goals">
-                            <h3>Setting Goals</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id sit.</p>
-                        </div>
-                    </div>
-                    <div className="program-card">
-                        <div className="program-details">
-                            <p>Next appointment</p>
-                            <h3>25 June 2021,</h3>
-                        </div>
-                        <div className="program-goals">
-                            <h3>Setting Goals</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id sit.</p>
+                        <div className="program-content">
+                            <h3>How to handle Stress</h3>
+                            <p>Jessica Smith</p>
+                            <span>1 day ago</span>
                         </div>
                     </div>
                     <div className="program-card">
-                        <div className="program-details">
-                            <p>Next appointment</p>
-                            <h3>25 June 2021,</h3>
+                        <div className="program-img">
+                            <img src="../images/dashboard/programs.png" alt="" />
                         </div>
-                        <div className="program-goals">
-                            <h3>Setting Goals</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id sit.</p>
+                        <div className="program-content">
+                            <h3>How to handle Stress</h3>
+                            <p>Jessica Smith</p>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                    <div className="program-card">
+                        <div className="program-img">
+                            <img src="../images/dashboard/programs.png" alt="" />
+                        </div>
+                        <div className="program-content">
+                            <h3>How to handle Stress</h3>
+                            <p>Jessica Smith</p>
+                            <span>1 day ago</span>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-    
     )
 }
 

@@ -57,6 +57,7 @@
     color: #313A63;
 }
 .online-doctors-details p{
+    margin-top: 6px;
     font-family: Poppins;
     font-weight: normal;
     font-size: 14px;
@@ -87,7 +88,6 @@
     border: none;
 }
 
-
 @media only screen and (max-width: 576px) {
     .therapist-list {
         flex-direction: column;
@@ -96,5 +96,14 @@
         text-align: center;
         width: 100%;
         margin-bottom: 25px;
+    }
+    .online-doctors-card{
+        flex-direction: column;
+    }
+    .online-doctors-details {
+        margin: 10px 0;
+    }
+    .online-doctors-card button {
+        margin: 10px 0;
     }
 }

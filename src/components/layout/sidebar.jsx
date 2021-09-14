@@ -8,44 +8,6 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar = ({sidebarOpen, closeSidebar}) => {
 
-    // const navList = [
-    //     {
-    //         name: 'Dashboard',
-    //         'icon': MdDashboard,
-    //         routeLink: routes.Dashboard
-    //     },
-    //     {
-    //         name: 'Therapists',
-    //         icon: '',
-    //         routeLink: routes.Therapist
-    //     },
-    //     {
-    //         name: 'Schedule',
-    //         'icon': MdDashboard,
-    //         routeLink: routes.Schedule
-    //     },
-    //     {
-    //         name: 'Message',
-    //         'icon': MdDashboard,
-    //         routeLink: routes.Message
-    //     },
-    //     {
-    //         name: 'Programs',
-    //         'icon': MdDashboard,
-    //         routeLink: routes.Programs
-    //     },
-    //     {
-    //         name: 'My Story',
-    //         icon: '',
-    //         routeLink: routes.MyStory
-    //     },
-    //     {
-    //         name: 'Settings',
-    //         icon: '',
-    //         routeLink: routes.Settings
-    //     }
-    // ]
-
     return (
         <div className={sidebarOpen ? "sidebar_responsive" : ""} id="sidebar">
             <FaTimes 
@@ -58,21 +20,6 @@ const Sidebar = ({sidebarOpen, closeSidebar}) => {
                 <img src="../images/icons/brand-logo.svg" alt="brand-logo" />
             </div>
             <div className="sidebar__menu">
-                {/* <ul>
-                    {navList.map((navItem, index) => {
-                        return (
-                            <li key={index}>
-                                <NavLink to={navItem.routeLink} className='sidebar__items'>
-                                    <span href="#dashboard" className="sidebar__link">
-                                        <i className='sidebar-menu-ico'>{`${navItem.icon}`}</i>
-                                        {navItem.name}
-                                        {navItem.icon}
-                                    </span>
-                                </NavLink>
-                            </li>
-                        )
-                    })}
-                </ul> */}
                 <div className="sidebar__items">
                     <NavLink to={routes.Dashboard} className="sidebar__link" activeClassName='active'>
                         <MdDashboard  className='sidebar-menu-icon'/>
