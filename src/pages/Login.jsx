@@ -1,16 +1,16 @@
-
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, useHistory} from "react-router-dom";
+import { routes } from "../routes";
 
 
 
 const Login = () => {
-
+    const history = useHistory();
 
     return (  
-        <div className="sign-in">
+        <div className="auth">
             <div className="reg-left">
-            </div>
+        </div>
         <div className="reg-right">
             <div className="signin-card">
 
@@ -18,15 +18,15 @@ const Login = () => {
                 <p className='signup-contents'>Pick up from where you left off.</p>
 
             <form action="#" className='signin-form' onSubmit>
-                 <div>
-                 <input type="email" name='email' placeholder='Email'/>
-                  </div>
+                <div>
+                    <input type="email" name='email' placeholder='Email'/>
+                </div>
 
-                  <div>
-                 <input type="password" name='password' placeholder='Password'/>
-                         <a href="/resetpassword">Forgot Password</a>
-                  </div> 
-                <button className= 'signin-btn' type='submit'><Link to= '/homepage' />Sign In</button>
+                <div>
+                    <input type="password" name='password' placeholder='Password'/>
+                </div> 
+                <NavLink to={'/resetpassword'}> Forgot Password</NavLink>
+                <button className= 'signin-btn' type='submit' onClick={()=> history.push(routes.Portal)}>Sign In</button>
             </form>
                     
             <div className="signin-alt">

@@ -10,7 +10,7 @@
 
 
 /* SIGN UP */
-.sign-up {
+.auth {
   display: flex;
 }
 
@@ -146,24 +146,21 @@
 }
 
 .resetpassword-btn {
-   display: flex;
-  align-items: center;
-  padding: 16px  45px ;
-  border: 1px solid #333333;
+  padding: 16px 50px;
+  border: .5px solid #000;
+  outline: none;
   box-sizing: border-box;
   border-radius: 10px;
-  width: 140px;
-  height: 40px;
+  background-color: #fff;
 }
 
 .resetpassword {
-   display: flex;
-  align-items: center;
-  padding: 16px  45px;
-  background: #5d598d;
+  padding: 16px 50px;
+  background: #49438D;;
   border-radius: 10px;
-  width: 140px;
-  height: 40px;
+  border: none;
+  outline: none;
+  color: #fff;
   margin-left: 22px;
 }
 
@@ -195,14 +192,13 @@ ul {
   display: flex;
   justify-content: center;
   width: 50%;
-  align-content: center;
   align-items: center;
 }
 
 .reset-left{
   background-image: url(../images/password-reset.jpg);
   height: 100vh;
-  width: 45%;
+  width: 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -210,9 +206,25 @@ ul {
 .reset-right{
   display: flex;
   justify-content: center;
-  width: 45%;
-  align-content: center;
+  width: 40%;
   align-items: center;
 }
 
 
+@media only screen and (max-width: 768px) {
+
+    .auth {
+      flex-direction: column;
+    }
+    .reg-left, .reset-left {
+      width: 100%;
+      height: 50vh;
+    }
+    .reg-right, .reset-right{
+      width: 100%;
+      margin-top: 30px;
+      padding: 20px;
+      /* align-content: center; */
+      /* align-items: center; */
+    }
+}

@@ -8,7 +8,7 @@ const Register = () => {
    
 
     return (  
-        <div className="sign-up">
+        <div className="auth">
             <div className="reg-left">
             </div> 
             <div className="reg-right">

@@ -2,11 +2,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Register from './pages/Register';
 import Login from './pages/Login';
+import { routes } from './routes'
+import Portal from './layouts/Portal';
 
 
 // import from components
 import StateProvider from './components/stateprovider';
-// import './styles/main.css';
 import './styles/register.css';
 import './pages/Resetpassword';
 import Resetpassword from './pages/Resetpassword';
@@ -17,8 +18,6 @@ const App = () => {
 	return (
 		<StateProvider>
 			<Router>
-				
-
 				<Switch>
 					{/* render Register Component when we hit /register */}
 					<Route exact path='/register'>
@@ -40,6 +39,9 @@ const App = () => {
 					<Route exact path='/'>
 						<Home />
 					</Route>
+
+					{/* {route to the oatients dashboard}	 */}
+					<Route path={ routes.Portal} component={ Portal } />
 
 				</Switch>
 			</Router>
