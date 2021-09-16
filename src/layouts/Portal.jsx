@@ -1,6 +1,6 @@
 import { Switch, Route, Redirect} from 'react-router-dom'
 import React, {useState} from 'react'
-import Navbar from '../components/layout/navbar';
+import Navbar from '../components/layout/PortalNavbar';
 import Sidebar from '../components/layout/sidebar';
 import { routes } from '../routes';
 import { PrivateRoutes } from '../routes/PrivateRoutes';

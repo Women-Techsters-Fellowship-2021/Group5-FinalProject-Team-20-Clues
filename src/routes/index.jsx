@@ -1,4 +1,7 @@
 export const routes = {
+    Login:'/login',
+    Register:'/register',
+    ResetPassword:'/reset-password',
     Portal:'/patients',
     Dashboard: '/patients/Dashboard',
     Schedule: '/patients/schedule',

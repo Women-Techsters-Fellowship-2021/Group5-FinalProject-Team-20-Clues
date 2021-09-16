@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar';
 import '../styles/Homepage.css';
 
 import picture1 from '../images/blog-img.jpg';
@@ -23,7 +23,7 @@ import Case from '../images/schedule-meeting.png';
 const Homepage = () => {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             
             <div id="Homepage">
 
@@ -31,7 +31,7 @@ const Homepage = () => {
                     <div className="hero-text">
                     <h1>Your Mental Health Is Our Priority</h1>
                     <p>Start your journey to improving your mental well-being with online sessions and therapeutic self-care tools from qualified therapists.</p>
-                    <button className="get-started"> Get Started </button>
+                    <button  className="get-started"> Get Started </button>
                     </div>
 
                     </div>

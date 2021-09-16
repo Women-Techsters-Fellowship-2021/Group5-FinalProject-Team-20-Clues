@@ -25,7 +25,7 @@ const Login = () => {
                 <div>
                     <input type="password" name='password' placeholder='Password'/>
                 </div> 
-                <NavLink to={'/resetpassword'}> Forgot Password</NavLink>
+                <NavLink to={routes.ResetPassword}> Forgot Password</NavLink>
                 <button className= 'signin-btn' type='submit' onClick={()=> history.push(routes.Portal)}>Sign In</button>
             </form>
                     

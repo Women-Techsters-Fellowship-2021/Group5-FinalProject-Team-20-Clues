@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
 }
-.active {
+.sidebar__items .active {
     background: #dfe5ff;
     border-radius: 10px;
     color: #49438d;
