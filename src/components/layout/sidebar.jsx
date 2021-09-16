@@ -17,7 +17,7 @@ const Sidebar = ({sidebarOpen, closeSidebar}) => {
                 id="sidebarIcon"
             />
             <div className="sidebar__logo">
-                <img src="../images/icons/brand-logo.svg" alt="brand-logo" />
+                <img src="../images/icons/lull-logo.svg" alt="brand-logo" />
             </div>
             <div className="sidebar__menu">
                 <div className="sidebar__items">

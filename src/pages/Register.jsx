@@ -16,6 +16,9 @@ const Register = () => {
             <div className="reg-right">
                 
             <div className="signup-card">
+                <div className="auth__logo">
+                    <img src="../images/icons/lull-logo.svg" alt="brand-logo" />
+                </div>
                 <h2>Welcome to LULL</h2>
                 <p className='signup-contents'>Create your account to get started</p>
                 

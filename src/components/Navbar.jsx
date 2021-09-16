@@ -18,7 +18,7 @@ const Navbar = () => {
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
           </div> 
           <NavLink exact to="/" className="nav-logo">
-            <span>Logo</span>
+            <img src="../images/icons/lull-logo.svg" alt="brand-logo" />
           </NavLink>
             
           <ul className={click ? "nav-menu active" : "nav-menu"}>

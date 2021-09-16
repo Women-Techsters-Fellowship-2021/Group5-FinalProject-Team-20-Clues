@@ -11,7 +11,9 @@ const Login = () => {
         </div>
         <div className="reg-right">
             <div className="signin-card">
-
+                <div className="auth__logo">
+                    <img src="../images/icons/lull-logo.svg" alt="brand-logo" />
+                </div>
                 <h2>Welcome to LULL</h2>
                 <p className='signup-contents'>Pick up from where you left off.</p>
 
