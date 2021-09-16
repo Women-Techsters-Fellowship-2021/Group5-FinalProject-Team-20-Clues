@@ -11,6 +11,29 @@ import StateProvider from './components/stateprovider';
 import './styles/register.css';
 import './pages/Resetpassword';
 import Resetpassword from './pages/Resetpassword';
+import Homepage from './pages/Homepage';
+
+
+
+// function App() {
+//   return (
+//     <div className="App">
+
+//     <BrowserRouter>	
+//     <Switch>
+//       {/* <Route exact path='/Homepage'>
+
+//         <Homepage />
+//       </Route>    */}
+//        {/* <Dashboard /> */}
+// 		<Route exact path="/" component={Homepage}/>
+//       {/* </Route> */}
+
+//     </Switch>
+// 		</BrowserRouter>
+//     </div>
+//   );
+// }
 
 
 
@@ -20,26 +43,27 @@ const App = () => {
 			<Router>
 				<Switch>
 					{/* render Register Component when we hit /register */}
-					<Route exact path='/register'>
+					{/* <Route exact path='/register'>
 						<Register />
-					</Route>
+					</Route> */}
 
 					{/* render Login Component when we hit /login */}
-					<Route exact path='/login'>
+					{/* <Route exact path='/login'>
 						<Login />
-					</Route>
+					</Route> */}
 
 					{/* render Home Component when we hit /home */}
-					<Route exact path='/resetpassword'>
+					{/* <Route exact path='/resetpassword'>
 						<Resetpassword />
-					</Route>
+					</Route> */}
 					
 
 					{/* render Home Component when we hit / */}
-					<Route exact path='/'>
+					{/* <Route exact path='/'>
 						<Home />
-					</Route>
-
+					</Route> */}
+					{/* route to website landing page */}
+					<Route exact path="/" component={Homepage}/>
 					{/* {route to the oatients dashboard}	 */}
 					<Route path={ routes.Portal} component={ Portal } />
 
