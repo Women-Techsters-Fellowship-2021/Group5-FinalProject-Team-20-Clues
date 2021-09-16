@@ -57,12 +57,6 @@ const Sidebar = ({sidebarOpen, closeSidebar}) => {
                     </NavLink>
                 </div>  
                 <div className="sidebar__items">
-                    <NavLink to={routes.MyStory} className="sidebar__link" activeClassName='active'>
-                        <HiOutlineUsers className='sidebar-menu-icon'/> 
-                        My Story
-                    </NavLink>
-                </div>
-                <div className="sidebar__items">
                     <NavLink to={routes.LogOut} className="sidebar__link" activeClassName='active'>
                         <FiLogOut className='sidebar-menu-icon'/>
                         Log out

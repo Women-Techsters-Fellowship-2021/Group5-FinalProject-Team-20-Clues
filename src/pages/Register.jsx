@@ -1,6 +1,8 @@
 
 import '../styles/register.css';
 import React from 'react'
+import { routes } from '../routes';
+import { Link } from 'react-router-dom';
 
 
 
@@ -45,7 +47,7 @@ const Register = () => {
                 </form>
 
                 <div className="signup-alt">
-                    Already have an account? <a href="/login"> Login</a> 
+                    Already have an account? <Link to={routes.Login}> Login</Link> 
                 </div>
             </div>
             </div>

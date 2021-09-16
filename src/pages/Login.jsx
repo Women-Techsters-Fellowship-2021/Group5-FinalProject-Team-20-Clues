@@ -1,8 +1,6 @@
 import React from "react";
-import { NavLink, useHistory} from "react-router-dom";
+import { Link, NavLink, useHistory} from "react-router-dom";
 import { routes } from "../routes";
-
-
 
 const Login = () => {
     const history = useHistory();
@@ -30,7 +28,7 @@ const Login = () => {
             </form>
                     
             <div className="signin-alt">
-                Don't have an account? <a href="./register"> Create account</a> 
+                Don't have an account? <Link to={routes.Register}> Create account</Link> 
             </div>
         </div>
         </div>

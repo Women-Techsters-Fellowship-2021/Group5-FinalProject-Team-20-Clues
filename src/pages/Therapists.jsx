@@ -7,17 +7,17 @@ const Therapists =() => {
                 <h3 className='categories-intro'>popular Therapists</h3>
                 <div className='therapist-list'>
                     <div className='therapist'>
-                        <img src="../images/therapist/therapist1.png" alt="therapist-image" />
+                        <img src="../images/therapist/therapist1.png" alt="therapist1" />
                         <h4>Dr Emilia Ken</h4>
                         <p>New york Hospital</p>
                     </div>
                     <div className='therapist'>
-                        <img src="../images/therapist/therapist2.png" alt="therapist-image" />
+                        <img src="../images/therapist/therapist2.png" alt="therapist2" />
                         <h4>Dr. Patrick Steve</h4>
                         <p>Lagoon Hospital</p>
                     </div>
                     <div className='therapist'>
-                        <img src="../images/therapist/therapist3.png" alt="therapist-image" />
+                        <img src="../images/therapist/therapist3.png" alt="therapist3" />
                         <h4>Dr. Joe Stone</h4>
                         <p>New york Hospital</p>
                     </div>
@@ -28,7 +28,7 @@ const Therapists =() => {
                 <h3 className='categories-intro'>Online Doctors</h3>
                 <div className='online-doctors-list'>
                     <div className='online-doctors-card'>
-                        <img src="../images/therapist/online-doctor.png" alt="therapist-image" />
+                        <img src="../images/therapist/online-doctor.png" alt="therapist" />
                         <div className='online-doctors-details'>
                             <h4>Dr Emilia Ken</h4>
                             <p>New york Hospital</p>
@@ -40,7 +40,7 @@ const Therapists =() => {
                         <button className='appointment-action-btn'>Book An Appointment</button>
                     </div>
                     <div className='online-doctors-card'>
-                        <img src="../images/therapist/online-doctor.png" alt="therapist-image" />
+                        <img src="../images/therapist/online-doctor.png" alt="therapist" />
                         <div className='online-doctors-details'>
                             <h4>Dr Emilia Ken</h4>
                             <p>New york Hospital</p>
@@ -52,7 +52,7 @@ const Therapists =() => {
                         <button className='appointment-action-btn'>Book An Appointment</button>
                     </div>
                     <div className='online-doctors-card'>
-                        <img src="../images/therapist/online-doctor.png" alt="therapist-image" />
+                        <img src="../images/therapist/online-doctor.png" alt="therapist" />
                         <div className='online-doctors-details'>
                             <h4>Dr Emilia Ken</h4>
                             <p>New york Hospital</p>
@@ -64,7 +64,7 @@ const Therapists =() => {
                         <button className='appointment-action-btn'>Book An Appointment</button>
                     </div>
                     <div className='online-doctors-card'>
-                        <img src="../images/therapist/online-doctor.png" alt="therapist-image" />
+                        <img src="../images/therapist/online-doctor.png" alt="therapist" />
                         <div className='online-doctors-details'>
                             <h4>Dr Emilia Ken</h4>
                             <p>New york Hospital</p>
