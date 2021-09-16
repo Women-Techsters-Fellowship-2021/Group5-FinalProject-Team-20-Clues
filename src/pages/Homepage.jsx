@@ -1,5 +1,5 @@
 import React from 'react';
-// import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar';
 import '../styles/Homepage.css';
 
 import picture1 from '../images/blog-img.jpg';
@@ -23,7 +23,7 @@ import Case from '../images/schedule-meeting.png';
 const Homepage = () => {
     return (
         <>
-            {/* <Navbar /> */}
+            <Navbar />
             
             <div id="Homepage">
 
