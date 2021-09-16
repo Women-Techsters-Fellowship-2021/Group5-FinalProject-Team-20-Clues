@@ -17,7 +17,7 @@ const Sidebar = ({sidebarOpen, closeSidebar}) => {
                 id="sidebarIcon"
             />
             <div className="sidebar__logo">
-                <img src="../images/icons/brand-logo.svg" alt="brand-logo" />
+                <img src="../images/icons/lull-logo.svg" alt="brand-logo" />
             </div>
             <div className="sidebar__menu">
                 <div className="sidebar__items">
@@ -56,12 +56,6 @@ const Sidebar = ({sidebarOpen, closeSidebar}) => {
                         Settings
                     </NavLink>
                 </div>  
-                <div className="sidebar__items">
-                    <NavLink to={routes.MyStory} className="sidebar__link" activeClassName='active'>
-                        <HiOutlineUsers className='sidebar-menu-icon'/> 
-                        My Story
-                    </NavLink>
-                </div>
                 <div className="sidebar__items">
                     <NavLink to={routes.LogOut} className="sidebar__link" activeClassName='active'>
                         <FiLogOut className='sidebar-menu-icon'/>

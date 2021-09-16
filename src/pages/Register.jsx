@@ -1,6 +1,8 @@
 
 import '../styles/register.css';
 import React from 'react'
+import { routes } from '../routes';
+import { Link } from 'react-router-dom';
 
 
 
@@ -14,6 +16,9 @@ const Register = () => {
             <div className="reg-right">
                 
             <div className="signup-card">
+                <div className="auth__logo">
+                    <img src="../images/icons/lull-logo.svg" alt="brand-logo" />
+                </div>
                 <h2>Welcome to LULL</h2>
                 <p className='signup-contents'>Create your account to get started</p>
                 
@@ -45,7 +50,7 @@ const Register = () => {
                 </form>
 
                 <div className="signup-alt">
-                    Already have an account? <a href="/login"> Login</a> 
+                    Already have an account? <Link to={routes.Login}> Login</Link> 
                 </div>
             </div>
             </div>

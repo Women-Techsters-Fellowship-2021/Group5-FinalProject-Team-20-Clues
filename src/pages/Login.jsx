@@ -1,8 +1,6 @@
 import React from "react";
-import { NavLink, useHistory} from "react-router-dom";
+import { Link, NavLink, useHistory} from "react-router-dom";
 import { routes } from "../routes";
-
-
 
 const Login = () => {
     const history = useHistory();
@@ -13,7 +11,9 @@ const Login = () => {
         </div>
         <div className="reg-right">
             <div className="signin-card">
-
+                <div className="auth__logo">
+                    <img src="../images/icons/lull-logo.svg" alt="brand-logo" />
+                </div>
                 <h2>Welcome to LULL</h2>
                 <p className='signup-contents'>Pick up from where you left off.</p>
 
@@ -30,7 +30,7 @@ const Login = () => {
             </form>
                     
             <div className="signin-alt">
-                Don't have an account? <a href="./register"> Create account</a> 
+                Don't have an account? <Link to={routes.Register}> Create account</Link> 
             </div>
         </div>
         </div>

@@ -14,7 +14,7 @@ import Homepage from './pages/Homepage';
 
 const App = () => {
 	return (
-		// <StateProvider>
+		<StateProvider>
 			<Router>
 				<Switch>
 					{/* route to website landing page */}
@@ -28,7 +28,7 @@ const App = () => {
 :
 				</Switch>
 			</Router>
-		// {/* </StateProvider> */}
+		</StateProvider>
 	);
 };
 
