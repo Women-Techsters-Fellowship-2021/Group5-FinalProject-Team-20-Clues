@@ -1,20 +1,20 @@
-// import Dashboard from "./layouts/dashboard";
 
 
 // function App() {
-//   return (
-//     <div>
-//       <p>
-//         <Dashboard />
-//       </p>
-//     </div>
-//   );
-// }
-
-// export default App;
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Homepage from './Pages/Homepage';
+	//   return (
+		//     <div>
+		//       <p>
+		//         <Dashboard />
+		//       </p>
+		//     </div>
+		//   );
+		// }
+		
+		// export default App;
+		import React from 'react';
+		import { BrowserRouter, Switch, Route } from 'react-router-dom';
+		// import Dashboard from "./layouts/dashboard";
+import Homepage from './pages/Homepage';
 
 
 
@@ -24,13 +24,13 @@ function App() {
 
     <BrowserRouter>	
     <Switch>
-      <Route exact path='/Homepage'>
+      {/* <Route exact path='/Homepage'>
 
         <Homepage />
-      </Route>   
-       
-    <Route exact path="/" component={Homepage}>
-      </Route>
+      </Route>    */}
+       {/* <Dashboard /> */}
+		<Route exact path="/" component={Homepage}/>
+      {/* </Route> */}
 
     </Switch>
 		</BrowserRouter>

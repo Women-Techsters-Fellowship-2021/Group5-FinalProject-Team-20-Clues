@@ -1,22 +1,22 @@
 import React from 'react';
-import Navbar from '../Components/Navbar';
-import '../Styles/Homepage.css';
+import Navbar from '../components/Navbar';
+import '../styles/Homepage.css';
 
-import picture1 from '../Images/blog-img.jpg';
-import progress from '../Images/progress.png';
-import articles from '../Images/write-articles.png';
-import tips from '../Images/daily-tips.png';
-import community  from '../Images/community.png';
-import drone from '../Images/drone.png';
-import phone from '../Images/contact-img.png';
+import picture1 from '../images/blog-img.jpg';
+import progress from '../images/progress.png';
+import articles from '../images/write-articles.png';
+import tips from '../images/daily-tips.png';
+import community  from '../images/community.png';
+import drone from '../images/drone.png';
+import phone from '../images/contact-img.png';
 
-import Tests from '../Images/icons/Assessment.png';
-import chat from '../Images/icons/Chat.png';
-import Therapy from '../Images/icons/Therapist.png';
-import Phone from '../Images/icons/phone.png';
-import Call from '../Images/icons/phone-call.png';
-import Signup from '../Images/icons/sign-up.png';
-import Case from '../Images/schedule-meeting.png';
+import Tests from '../images/icons/Assessment.png';
+import chat from '../images/icons/Chat.png';
+import Therapy from '../images/icons/Therapist.png';
+import Phone from '../images/icons/phone.png';
+import Call from '../images/icons/phone-call.png';
+import Signup from '../images/icons/sign-up.png';
+import Case from '../images/schedule-meeting.png';
 
 
 

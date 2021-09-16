@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
-import '../Styles/Navbar.css';
+import '../styles/Navbar.css';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
