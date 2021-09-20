@@ -13,16 +13,13 @@
 .auth {
   display: flex;
 }
-
-.sign-in {
-  display: flex;
+.signup-card{
+  padding: 0 20px;
 }
-
 .signup-card h2 {
   font-family: Montserrat;
   font-weight: bold;
 }
-
 .signup-contents {
   color: #000;
   font-family: Poppins;
@@ -206,15 +203,14 @@ ul {
 .reset-right{
   display: flex;
   justify-content: center;
-  width: 40%;
+  width: 50%;
   align-items: center;
+  padding: 30px;
 }
 
 .auth__logo {
   margin-bottom: 50px;
 }
-
-
 @media only screen and (max-width: 768px) {
 
     .auth {
@@ -227,8 +223,6 @@ ul {
     .reg-right, .reset-right{
       width: 100%;
       margin-top: 30px;
-      padding: 20px;
-      /* align-content: center; */
-      /* align-items: center; */
+  
     }
 }
