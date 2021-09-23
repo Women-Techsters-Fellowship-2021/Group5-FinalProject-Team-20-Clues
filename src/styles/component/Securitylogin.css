@@ -1,0 +1,109 @@
+.allowed-attempts,
+.notification {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 35px;
+}
+.email-notification {
+  background-color: #fff;
+  padding: 10px;
+}
+.password-length,
+.uppercase,
+.number {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 2px;
+}
+
+.allowed-attempts input,
+.password-length input {
+  float: right;
+  width: 10%;
+  border: none;
+  background-color: #dfe5ff;
+  padding: 5px;
+  margin-bottom: 35px;
+}
+::placeholder {
+  color: black;
+  font-weight: bold;
+}
+.uppercase .fas.fa-toggle-on,
+.number .fas.fa-toggle-on,
+.notification .fas.fa-toggle-on,
+.email-notification .fas.fa-toggle-on {
+  float: right;
+  color: #49438d;
+  padding: 5px;
+  margin-bottom: 35px;
+}
+.allowed-attempts p,
+.password-length p,
+.uppercase p,
+.number p,
+.notification p,
+.email-notification p {
+  color: #9d9c9c;
+  font-size: 13px;
+  margin-top: 20px;
+}
+.password-req {
+  margin-left: 0.8em;
+  margin-bottom: 1em;
+}
+
+.save-changes {
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #49438d;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  font-weight: bold;
+  margin-top: 2em;
+}
+.msg-notification {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 3em;
+  margin-bottom: 1em;
+}
+
+.notifs {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: auto;
+  background-color: #fff;
+  padding: 20px;
+  line-height: 1.5em;
+}
+
+.notifs h5 {
+  display: flex;
+  justify-content: space-between;
+}
+.notifs p {
+  font-size: 13px;
+}
+.notifs h5 .fas.fa-toggle-on {
+  color: #49438d;
+}
+input [type="checkbox"] {
+  color: black;
+}
+@media screen and (min-width: 360px) and (max-width: 700px) {
+  .msg-notification {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    grid-gap: 3em;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+}

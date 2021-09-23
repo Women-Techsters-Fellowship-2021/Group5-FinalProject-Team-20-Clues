@@ -108,7 +108,7 @@
 #contact {
   border-bottom: 2px solid #fff;
 }
-@media screen and (min-width: 1250px) and (max-width: 1400px) {
+@media screen and (min-width: 1250px) and (max-width: 4000px) {
   #product {
     display: grid;
     width: auto;
