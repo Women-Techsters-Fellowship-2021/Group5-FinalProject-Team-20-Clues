@@ -12,6 +12,7 @@
 /* pages */
 @import './styles/pages/dashboard.css';
 @import './styles/pages/therapists.css';
+@import './styles/pages/bookappointment.css';
 
 * {
     margin: 0;
