@@ -13,12 +13,12 @@ const Resetpassword = () => {
             </div>
              <div className="reset-right">
                  
-        <div className="signin-card">
+        <div className="signin-card ">
             <div className="auth__logo">
                     <img src="../images/icons/lull-logo.svg" alt="brand-logo" />
             </div>
 			<h2>Forgot Your Password</h2>
-             <p className='signup-contents'>Enter your email address to get a link to reset your password.</p>
+             <p className='signup-contents'>Enter your email address to get a link to <br></br>  reset your password.</p>
             <form action="#" className='signin-form' onSubmit>
                 <div>
                     <input type="email" name='email' placeholder='Email'/>

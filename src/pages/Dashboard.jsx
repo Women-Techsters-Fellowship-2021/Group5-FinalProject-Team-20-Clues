@@ -1,4 +1,5 @@
 import { FaRegSmile } from "react-icons/fa";
+// import welcomeImg from "../../src/images/party.svg"
 
 const Dashboard = () => {
     return (
@@ -6,13 +7,19 @@ const Dashboard = () => {
             {/* <!-- MAIN TITLE STARTS HERE --> */}
             <div className="main-header">
                 <div className='greetings'>
+                    <div className="greeting-one">
+
                     <h4>Welcome Jesutofunmi,</h4>
-                    <p>How are you feeling today?</p>
-                    <div className='user-mood'>
+                    <p>Have a nice day and don't forget to take care of yourself!</p>
+                    </div>
+                    {/* <div className='user-mood'>
                         <span className='happy'>Happy</span>
                         <span className='sad'>Sad</span>
                         <span className='neutral'>Neutral</span>
                         <span className='excited'>Excited</span>
+                    </div> */}
+                    <div className="greeting-two">
+                        {/* <img src={welcomeImg} alt="Welcome" width="150" className="wel-img" /> */}
                     </div>
                 </div>
                 <div className='tips'>

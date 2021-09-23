@@ -8,7 +8,6 @@
   padding: 0;
 }
 
-
 /* SIGN UP */
 .auth {
   display: flex;
@@ -17,62 +16,96 @@
 .sign-in {
   display: flex;
 }
-
+.auth-cont {
+  padding: 43px 43px;
+  background: white;
+  box-shadow: 0 1px 6px rgb(61 65 84 / 15%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.auth-cont h2 {
+  color: #49438d;
+}
 .signup-card h2 {
-  font-family: Montserrat;
+  font-family: montserrat;
   font-weight: bold;
 }
 
 .signup-contents {
-  color: #000;
-  font-family: Poppins;
-  font-weight: bold;
-  margin-bottom: 30px;
+  color: #49438d;
+  font-family: montserrat;
+  margin-bottom: 25px;
+  margin-top: 9px;
 }
 
 .signup-text {
   font-size: 1rem;
 }
-
-
+#category {
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  border: 2px solid #0000000f;
+  border-radius: 5px;
+  width: 220px;
+  padding: 23px;
+  width: 220px;
+  padding: 13px;
+  margin-left: 5px;
+}
+.sel-ctn:focus-visible {
+  outline: none;
+  /* border: 2px solid #719ece;
+  box-shadow: 0 0 6px #719ece; */
+}
 .signup-form input {
   width: 300px;
-    height: 45px;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    font-size: 0.8rem;
-    letter-spacing: 0.5px;
-    border: 2px solid #0000000f;
-    border-radius: 5px;
-    display: block;
-    box-shadow: 0px 0px 5px #8e8ef338;
+  height: 45px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  border: 2px solid #0000000f;
+  display: block;
 }
 
 .signin-form input {
   width: 300px;
-    height: 45px;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    font-size: 0.8rem;
-    letter-spacing: 0.5px;
-    border: 2px solid #0000000f;
-    border-radius: 5px;
-    display: block;
-    box-shadow: 0px 0px 5px #8e8ef338;
+  height: 45px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  border: 2px solid #0000000f;
+  display: block;
 }
 
 .signup-form input:focus {
   outline: none;
   border: 2px solid #719ece;
-  box-shadow: 0 0 6px #719ece;
+  box-shadow: 0px 0px 5px #8e8ef338;
+  border: 2px solid #0000000f;
 }
 
 .signin-form input:focus {
   outline: none;
   border: 2px solid #719ece;
-  box-shadow: 0 0 10px #719ece;
+  box-shadow: 0px 0px 5px #8e8ef338;
+  border: 2px solid #0000000f;
 }
 
+.signin-card {
+  padding: 43px 43px;
+  background: white;
+  box-shadow: 0 1px 6px rgb(61 65 84 / 15%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #49438d;
+}
 .signup-form p {
   color: red;
   text-align: start;
@@ -89,7 +122,7 @@
 
 .signup-btn {
   color: #fff;
-  background-color: darkblue;
+  background-color: #49438d;
   text-transform: uppercase;
   text-align: center;
   font-size: 0.8rem;
@@ -102,10 +135,12 @@
   border-radius: 4px;
   width: 74%;
 }
-
+.btn-ctn {
+  text-align: center;
+}
 .signin-btn {
   color: #fff;
-  background-color: darkblue;
+  background-color: #49438d;
   text-transform: uppercase;
   text-align: center;
   font-size: 0.8rem;
@@ -147,7 +182,7 @@
 
 .resetpassword-btn {
   padding: 16px 50px;
-  border: .5px solid #000;
+  border: 0.5px solid #000;
   outline: none;
   box-sizing: border-box;
   border-radius: 10px;
@@ -156,7 +191,7 @@
 
 .resetpassword {
   padding: 16px 50px;
-  background: #49438D;;
+  background: #49438d;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -167,7 +202,7 @@
 ul {
   list-style: none;
   display: inline-flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .sign-in label {
@@ -180,7 +215,7 @@ ul {
   font-weight: bold;
 }
 
-.reg-left{
+.reg-left {
   background-image: url(../images/reg-bg.jpg);
   height: 100vh;
   width: 50%;
@@ -188,14 +223,14 @@ ul {
   background-repeat: no-repeat;
 }
 
-.reg-right{
+.reg-right {
   display: flex;
   justify-content: center;
   width: 50%;
   align-items: center;
 }
 
-.reset-left{
+.reset-left {
   background-image: url(../images/password-reset.jpg);
   height: 100vh;
   width: 50%;
@@ -203,32 +238,32 @@ ul {
   background-repeat: no-repeat;
 }
 
-.reset-right{
+.reset-right {
   display: flex;
   justify-content: center;
-  width: 40%;
+  width: 50%;
   align-items: center;
 }
 
 .auth__logo {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
-
 @media only screen and (max-width: 768px) {
-
-    .auth {
-      flex-direction: column;
-    }
-    .reg-left, .reset-left {
-      width: 100%;
-      height: 50vh;
-    }
-    .reg-right, .reset-right{
-      width: 100%;
-      margin-top: 30px;
-      padding: 20px;
-      /* align-content: center; */
-      /* align-items: center; */
-    }
+  .auth {
+    flex-direction: column;
+  }
+  .reg-left,
+  .reset-left {
+    width: 100%;
+    height: 50vh;
+  }
+  .reg-right,
+  .reset-right {
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    /* align-content: center; */
+    /* align-items: center; */
+  }
 }

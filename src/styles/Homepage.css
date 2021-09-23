@@ -412,8 +412,7 @@
 }
 
 /* Full-width input fields */
-input[type="text"],
-input[type="email"] {
+.contact-form input {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 1em;

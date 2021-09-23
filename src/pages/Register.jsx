@@ -15,7 +15,7 @@ const Register = () => {
             </div> 
             <div className="reg-right">
                 
-            <div className="signup-card">
+            <div className="auth-cont">
                 <div className="auth__logo">
                     <img src="../images/icons/lull-logo.svg" alt="brand-logo" />
                 </div>
@@ -26,7 +26,7 @@ const Register = () => {
 
                <div>
                <label for="">Register as:</label>
-              <select name="category" id="category"> 
+              <select name="category" id="category" className="sel-ctn"> 
                  <option value="choose on">Choose one</option>
                    <option value="patient">Patient</option>
                    <option value="doctor">Doctor</option>
@@ -35,9 +35,9 @@ const Register = () => {
                <br />
 
                     <div>   
-                    <input type="text" id="fullname" name="firstname" placeholder='Full Name'/> 
+                    <input type="text" className="effect" id="fullname" name="firstname" placeholder='Full Name'/> 
+                    <span class="focus-border"></span>
                     </div>
-                         <input type="date" id="birthday" name="birthday" placeholder= 'Date of Birth'/>
                    <div>
                     <input type="email" name='email' id='email' placeholder='Email'/>  
                    </div>
@@ -45,8 +45,10 @@ const Register = () => {
                     <div>
                     <input type="password" name='password' id='password' placeholder='Password'/>
                     </div>
-             <textarea rows="4" cols="40" name="comment" form="usrform">Enter your Address here...</textarea>               
+
+                    <div className="btn-ctn">
                     <button className= 'signup-btn' type='submit'>Sign Up</button>
+                    </div>
                 </form>
 
                 <div className="signup-alt">

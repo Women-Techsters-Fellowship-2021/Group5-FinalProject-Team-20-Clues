@@ -28,7 +28,7 @@
         "sidebar main main main";
 }
 main {
-    background: #f3f4f6;
+    background: white;
     grid-area: main;
     overflow-y: auto;
     padding: 15px;
