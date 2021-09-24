@@ -10,7 +10,7 @@ const Login = () => {
             <div className="reg-left">
         </div>
         <div className="reg-right">
-            <div className="signin-card">
+            <div className="signin-card auth-cont">
                 <div className="auth__logo">
                     <img src="../images/icons/lull-logo.svg" alt="brand-logo" />
                 </div>

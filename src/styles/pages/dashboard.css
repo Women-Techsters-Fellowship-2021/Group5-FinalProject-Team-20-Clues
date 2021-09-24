@@ -7,11 +7,20 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.greetings{
+    background: white;
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+    border-radius: 9px;
+    box-shadow: #64646f38 0px 4px 17px 0px;
+    display: flex;
+    width: 50%;
+    /* height: 15rem; */
+}
 .greetings h4 {
     font-family: Poppins;
     font-size: 18px;
     line-height: 1.5;
-    color: #9D9C9C;
+    color: #49438d;
 }
 .greetings p {
     margin: 8px 0;
@@ -20,8 +29,21 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 1.5x;
-    color: #9D9C9C;
+    color: #49438d;
     
+}
+.greeting-one{
+    /* background: turquoise; */
+    width: 50%;
+    padding: 18px;
+}
+.greeting-two{
+    background-image: url(../../../src/images/party.svg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
 }
 .greetings .user-mood {
     margin-top: 31px;
@@ -42,7 +64,10 @@
     margin-right: 0px;
     color: #313A63;
 }
-
+.wel-img {
+    position: relative;
+    /* top: -50px; */
+}
 .happy {
     background: #49438d;
 }
@@ -57,30 +82,36 @@
 }
 .tips {
     width:35%;
+    background: #49438d;
+    box-shadow: #64646f38 0px 4px 17px 0px;
+    border-radius: 9px;
+    width: 46%;
+    padding: 15px;
 }
 .tips h3{
     font-weight: bold;
-    color: #313A63;
     font-size: 24px;
     line-height: 1.5;
-    color: #313A63;
+    color: white;
+
 }
 .tips-content {
     margin-top: 15px;
     display: flex;
     align-items: center;
+    color: white;
+
 }
 .tips-icon {
     font-size: 90px;
-    color: #49438D;
+    color: white;
     margin-right: 20px;
 }
 .tips-content p{
-    color: #49438D;
     font-family: Poppins;
     font-size: 18px;
     line-height: 1.5;
-    color: #49438D;
+    color: white;
 }
 /* card sections */
 .appointment {
@@ -123,7 +154,7 @@
     padding: 25px;
     border-radius: 10px;
     background: #fff;
-    box-shadow: 0px 15px 30px rgba(123, 123, 123, 0.2);
+    box-shadow: #64646f38 0px 4px 17px 0px;
 }
 .card-header {
     display: flex;
