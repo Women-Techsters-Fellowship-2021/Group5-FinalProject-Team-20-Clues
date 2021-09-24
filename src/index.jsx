@@ -6,6 +6,9 @@ import App from './App';
 import './styles/main.css';
 import './main.css';
 
+// Assessment. 
+import './styles/pages/assessment.css'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

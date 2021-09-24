@@ -1,0 +1,202 @@
+
+/* ASSESSMENT. */
+#welcome {
+  background-image: url('../../pages/Assessment/hap.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.welcome {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome_heading {
+  color: #564787;
+  height: 35vh;
+  word-spacing: 2px;
+  font-size: 1.4rem;
+}
+
+.welcome_btn {
+  height: 40px;
+  width: 150px;
+  background-color: #564787;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.welcome_btn:hover {
+  background-color: #fff;
+  color: #564787;
+  transition: .5s ease;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents {
+  margin: 80px 0 70px;
+}
+
+.heading {
+  text-align: center;
+  color: #564787;
+  margin: 0 0 30px;
+}
+
+.paragraph {
+  font-size: .9rem;
+  max-width: 70%;
+  min-width: 20%;
+  text-align: center;
+  line-height: 25px;
+  margin: auto;
+  word-spacing: 2px;
+}
+
+.que {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+}
+
+.que_heading {
+  color: #564787;
+  margin: 0 0 50px;
+  
+}
+
+.que_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input {
+  text-align: start;
+  margin: 0 auto 30px;
+  width: 100%;
+}
+
+input {
+  margin: .4rem;
+}
+
+.radiobutton {
+	background-color: #564787;
+  border: none;
+  padding: 2px;
+  margin: .4rem;
+}
+
+.radiobutton:hover{
+	background-color: #564787;
+  border: none;
+  padding: 10px;
+}
+
+/* STEPS. */
+.nav-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btns {
+  height: 35px;
+  width: 120px;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-btn {
+  background-color: #564787;
+  color: #fff;
+  margin-left: 40px;
+}
+
+.prev-btn {
+  /* color: #fff; */
+  margin-right: 40px;
+}
+
+/* AGE. */
+.select {
+  height: 34px;
+  width: 200px;
+  padding: 0 25px 0;
+  font-size: .9rem;
+  letter-spacing: 1.5px;
+  margin: auto;
+  font-size: 16px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* HABITS. */
+.boxes {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.boxed {
+  margin-bottom: 30px;
+}
+
+.radio {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+/* CHALLENGES.  */
+.challenge {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+/* CONFIRM.  */
+.confirm_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.confirm_heading {
+  color: #564787;
+  word-spacing: 2px;
+}

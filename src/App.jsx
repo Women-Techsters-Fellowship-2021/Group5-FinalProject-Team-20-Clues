@@ -4,6 +4,10 @@ import Login from './pages/Login';
 import { routes } from './routes'
 import Portal from './layouts/Portal';
 
+// Assessment.
+import Welcome from './pages/Assessment/Welcome';
+import Steps from './pages/Assessment/Steps';
+
 
 // import from components
 import StateProvider from './components/stateprovider';
@@ -21,11 +25,14 @@ const App = () => {
 					<Route exact path="/" component={Homepage}/>
 
 					<Route path={routes.Login} component={Login}/>
-					<Route path={routes.Register} component={Register}/>rd
+					<Route path={routes.Register} component={Register}/>
 					<Route path={routes.ResetPassword} component={Resetpassword}/>
 					{/* {route to the patients dashboard}	 */}
 					<Route path={ routes.Portal} component={ Portal } />
-:
+
+					{/* Assessment Questions */}
+					<Route path="/welcome" component={ Welcome } />
+					<Route path="/steps" component={ Steps } />
 				</Switch>
 			</Router>
 		</StateProvider>
