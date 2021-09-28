@@ -51,7 +51,7 @@ const Therapists =() => {
                             <FaStar className='rating-icon'/>
                             5.0
                         </div>
-                        <Link to={routes.Login} className='appointment-action-btn'>Book An Appointment</Link>
+                        <Link to={routes.BookAppiontment} className='appointment-action-btn'>Book An Appointment</Link>
                     </div>
                     <div className='online-doctors-card'>
                         <img src="../images/therapist/online-doctor.png" alt="therapist" />

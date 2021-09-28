@@ -1,6 +1,5 @@
-
 .main__container {
-    padding: 20px 35px;
+    padding: 20px 15px;
 }
 .main-header {
     display: flex; 
@@ -122,31 +121,47 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    padding: 20px 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px rgba(123, 123, 123, 0.2);
+}
+.optionTabs,
+.historyTabs {
+    color: #9D9C9C;
+}
+.activeTabs,
+.active-historyTabs {
+    color: #313A63;
 }
 .section-intro h3{
     font-weight: bold;
     font-size: 24px;
     line-height: 36px;
-    color: #313A63;
 }
 .section-intro button {
     color: #49438d;
+    background-color: #fff;
     border: none;
     outline: none;
-    font-size: 16px;
-    line-height: 24px;
     font-family: Poppins;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
-    color: #49438D;
     cursor: pointer;
 }
 .card-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    margin: 20px 0;
+    margin: 40px 0;
+}
+.tabContent,
+.historyContent {
+    display: none;
+}
+.activeTabs-content,
+.active-historyContent { 
+    display: block;
 }
 .appointment-card {
     display: flex;
@@ -175,7 +190,7 @@
     font-family: Poppins;
     font-size: 14px;
     line-height: 1.5;
-    color: #313A63;
+    color: #9D9C9C;
 }
 .card-body {
     display: flex;
@@ -185,14 +200,12 @@
 }
 .card-body p {
     font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 1.5;
     color: #313A63;
 }
 .card-body h3 {
-    margin: 4px 0 18px;
+    margin: 10px 0 18px;
     font-family: Poppins;
     font-weight: 600;
     font-size: 16px;
@@ -236,31 +249,103 @@
 }
 .program-content {
     padding: 10px;
+    color: #0F121F;
 }
 .program-content h3 {
     font-family: Poppins;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.7;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
     letter-spacing: 0.03em;
 }
-.program-content p{
-    margin: 8px 0 30px;
-    font-family: Montserrat;
+.program-content h4{
+    margin: 16px 0;
+    font-family: Poppins;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.21;
-    color: #0F121F;
+    line-height: 1.5;
+}
+.program-content p{
+    margin-bottom: 16px;
+    font-family: Poppins;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
 }
 .program-content span{
-    /* margin-top: 30px; */
-    font-family: Montserrat;
+    font-family: Poppins;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.21;
-    color: #9D9C9C;
-
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
+.history-section {
+    margin-top: 40px;
+}
+
+.appointment-history-header {
+    border-bottom: 0.3px solid #9D9C9C;
+}
+.appointment-history-header ul{
+    display: flex;
+    justify-content: space-between;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #0F121F;
+}
+.appointment-history-header li{
+    padding: 16px 0;
+}
+.appointment-history-card ul{
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #0F121F;
+}
+.appointment-history-card li{
+    padding: 16px 0;
+}
+
+
+.history-section {
+    /* overflow-x: auto; */
+}
+.history-section table{
+    color: #0F121F;
+    width: 100% !important;
+    border-collapse: collapse;
+}
+.history-section thead th{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    opacity: 0.7;
+    border-bottom: 0.3px solid #9D9C9C;
+    padding: 16px 0;
+    text-align: left;
+}
+.history-section tbody td{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    opacity: 0.8;
+    padding: 16px 0;
+    text-align: left;
+}
+
+
+
+
 @media only screen and (max-width: 855px) {
     .main-header{
         flex-direction: column;
@@ -288,5 +373,29 @@
         color: #49438D;
         margin-right: 0;
          margin-bottom: 15px;
+    }
+}
+@media (max-width:767px) {
+    .section-intro {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .section-intro h3{
+        flex-direction: column;
+        border-bottom: 0.3px solid #9D9C9C;
+        padding: 10px 0;
+        width: 100%;
+    }
+    .section-intro button{
+        padding: 10px 0;
+    }
+    .history-section table{
+        min-width: 100%;
+        overflow-x: auto;
+    }
+}
+@media (min-width:767px) {
+    .history-section table{
+        /* width: 100%; */
     }
 }

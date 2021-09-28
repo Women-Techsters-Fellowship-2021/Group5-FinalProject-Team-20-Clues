@@ -67,16 +67,11 @@
     line-height: 1.5;
     color: #5E5E5E;
 }
-
+.navbar__right .nav-notification,.nav-avatar {
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 978px) {
-    /* .portal {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 3fr;
-        grid-template-areas: 
-            "nav"
-            "main";
-    } */
     .nav_icon {
         display: block;
     }

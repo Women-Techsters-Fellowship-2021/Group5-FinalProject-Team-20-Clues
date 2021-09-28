@@ -5,7 +5,6 @@ import Programs from '../pages/Programs'
 import Therapists from '../pages/Therapists'
 import { routes } from './index'
 import Settings from '../pages/Settings'
-import LogOut from '../pages/LogOut'
 import BookAppointment from '../pages/BookAppointment'
 
 
@@ -16,6 +15,5 @@ export const PrivateRoutes = [
     { 'component': Programs, 'link': routes.Programs },
     { 'component': Therapists, 'link': routes.Therapist },
     { 'component': Settings, 'link': routes.Settings },
-    // { 'component': LogOut, 'link': routes.LogOut },
     { 'component': BookAppointment, 'link': routes.BookAppiontment },
 ]
