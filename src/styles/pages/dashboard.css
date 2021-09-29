@@ -312,11 +312,6 @@
 .appointment-history-card li{
     padding: 16px 0;
 }
-
-
-.history-section {
-    /* overflow-x: auto; */
-}
 .history-section table{
     color: #0F121F;
     width: 100% !important;
@@ -395,7 +390,5 @@
     }
 }
 @media (min-width:767px) {
-    .history-section table{
-        /* width: 100%; */
-    }
+    
 }
