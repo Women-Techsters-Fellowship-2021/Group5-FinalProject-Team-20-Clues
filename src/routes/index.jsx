@@ -6,9 +6,9 @@ export const routes = {
     Dashboard: '/patients/Dashboard',
     Schedule: '/patients/schedule',
     Message: '/patients/message',
-    Programs: '/patients/rograms',
+    Programs: '/patients/programs',
     Therapist: '/patients/therapist',
-    MyStory: '/patients/my-story',
     Settings: '/patients/Settings',
     LogOut: '/patients/log-out',
+    BookAppiontment:'/patients/therapist/book-appointment'
 }

@@ -12,6 +12,7 @@
 /* pages */
 @import './styles/pages/dashboard.css';
 @import './styles/pages/therapists.css';
+@import './styles/pages/bookappointment.css';
 
 * {
     margin: 0;
@@ -21,7 +22,7 @@
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #fff;

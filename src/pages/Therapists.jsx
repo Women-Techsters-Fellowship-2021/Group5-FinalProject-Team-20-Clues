@@ -1,4 +1,6 @@
 import { FaStar } from "react-icons/fa"
+import { Link } from "react-router-dom"
+import { routes } from "../routes";
 
 const Therapists =() => {
     return (
@@ -37,7 +39,7 @@ const Therapists =() => {
                             <FaStar className='rating-icon'/>
                             5.0
                         </div>
-                        <button className='appointment-action-btn'>Book An Appointment</button>
+                        <Link to={routes.BookAppiontment} className='appointment-action-btn'>Book An Appointment</Link>
                     </div>
                     <div className='online-doctors-card'>
                         <img src="../images/therapist/online-doctor.png" alt="therapist" />
@@ -49,7 +51,7 @@ const Therapists =() => {
                             <FaStar className='rating-icon'/>
                             5.0
                         </div>
-                        <button className='appointment-action-btn'>Book An Appointment</button>
+                        <Link to={routes.BookAppiontment} className='appointment-action-btn'>Book An Appointment</Link>
                     </div>
                     <div className='online-doctors-card'>
                         <img src="../images/therapist/online-doctor.png" alt="therapist" />
@@ -61,7 +63,7 @@ const Therapists =() => {
                             <FaStar className='rating-icon'/>
                             5.0
                         </div>
-                        <button className='appointment-action-btn'>Book An Appointment</button>
+                        <Link to={routes.BookAppiontment} className='appointment-action-btn'>Book An Appointment</Link>
                     </div>
                     <div className='online-doctors-card'>
                         <img src="../images/therapist/online-doctor.png" alt="therapist" />
@@ -73,7 +75,7 @@ const Therapists =() => {
                             <FaStar className='rating-icon'/>
                             5.0
                         </div>
-                        <button className='appointment-action-btn'>Book An Appointment</button>
+                        <Link to={routes.BookAppiontment} className='appointment-action-btn'>Book An Appointment</Link>
                     </div>
                 </div>
             </div>
