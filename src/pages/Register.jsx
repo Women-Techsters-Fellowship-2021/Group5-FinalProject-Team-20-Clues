@@ -15,15 +15,7 @@ const Register = () => {
     const history = useHistory();
 	const context = useContext(AppContext);
 	
-
-	// function registerUser({ email, password, confirmPassword })
-
-
-// const Register = () => {
-//     const { register, handleSubmit } = useForm();
-//     // const history = useHistory();
-
-   const registerUser = ({ email, password, confirmPassword,}) => {
+   const registerUser = ({ email, password, confirmPassword}) => {
 
 //         if (!email) {
 //             alert("Email required");
@@ -42,9 +34,9 @@ const Register = () => {
 //         if (userExist) {
 //             return alert ('This user has already been registered')
 //         } alert('Registered Successfully')
-//             // history.push('/homepage')
+            // history.push('/patients')
 
-//     }
+    // }
 
 //     const isEmailValid = (email) => {
 //         if( !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email)) {
@@ -81,6 +73,7 @@ const Register = () => {
                          userEmail: result.data.data.email,
                      },
                  })
+                   history.push('/patients')
              }
          })
          const newEmail = {
@@ -89,7 +82,7 @@ const Register = () => {
              body: "Dear " + newUser.email + ". Thank you for completing your registration"
          }
    
-   
+        }
     return (  
         <div className="auth">
             <div className="reg-left">
@@ -133,6 +126,6 @@ const Register = () => {
         </div>
     );
   }
-}
+
 
 export default Register
