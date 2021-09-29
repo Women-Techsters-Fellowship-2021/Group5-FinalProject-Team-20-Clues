@@ -75,7 +75,7 @@
     margin-right: 10px;
     vertical-align: middle;
 }
-.online-doctors-card button{
+.online-doctors-card .appointment-action-btn{
     background: #49438D;
     border-radius: 10px;
     color: #fff;

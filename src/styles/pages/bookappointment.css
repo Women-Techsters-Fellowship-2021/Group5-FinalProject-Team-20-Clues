@@ -1,0 +1,143 @@
+.book-appointment {
+    padding: 0 20px;
+}
+.book-appointment .prospect-profile{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.book-appointment .prospect-header{
+    display: flex;
+    align-items: center;
+}
+.book-appointment .prospect-details{
+    margin-left: 30px;
+}
+.book-appointment .prospect-details h3{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #49438D;
+}
+.book-appointment .prospect-details p{
+    font-family: Poppins;
+    font-size: 14px;
+    line-height: 21px;
+    color: #49438D;
+    margin: 8px 0 16px;
+}
+.book-appointment .prospect-details span{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.book-appointment .prospect-icon {
+    margin-right: 15px;
+}
+.book-appointment .prospect-ratings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book-appointment .prospect-ratings p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 40%;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.book-appointment .prospect-ratings span{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #49438D;
+}
+.book-appointment .prospect-intro{
+    max-width: 50%;
+    padding: 30px 0 50px;
+    margin-bottom: 20px;
+}
+.book-appointment .prospect-intro p{
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.book-appointment .prospect-btn{
+    background: #49438D;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    display: block;
+    margin: 15px 0;
+    float: right;
+}
+.book-appointment .prospect-review{ 
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #313A63;
+    display: block;
+    margin-bottom: 20px ;
+}
+.book-appointment .review-container{ 
+    width: 50%;
+}
+.book-appointment .review-details{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.book-appointment .review-details img{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book-appointment .review-details p{ 
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-left: 16px;
+}
+
+
+
+
+@media (max-width:768px) {
+    .book-appointment .prospect-profile{
+        grid-template-columns: 1fr;
+    }
+    .book-appointment .prospect-intro{
+        max-width: 100%;
+        padding: 30px 0 50px;
+    }
+    .book-appointment .review-container{ 
+        width: 100%;
+    }
+}

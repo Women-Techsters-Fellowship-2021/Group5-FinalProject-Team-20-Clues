@@ -1,4 +1,3 @@
-
 import '../styles/register.css';
 import React, { useContext} from 'react'
 import { routes } from '../routes';
@@ -88,14 +87,14 @@ const Register = () => {
              subject: "Lull Registration Notification",
              body: "Dear " + newUser.email + ". Thank you for completing your registration"
          }
-   
+        }
    
     return (  
         <div className="auth">
-            <div className="reg-left">
-            </div> 
+            <div className="reg-left"></div> 
             <div className="reg-right">
-                <div className="signup-card">
+                
+                <div className="auth-cont">
                     <div className="auth__logo">
                         <img src="../images/icons/lull-logo.svg" alt="brand-logo" />
                     </div>
@@ -105,14 +104,16 @@ const Register = () => {
                     <form action="#" className='signup-form'onSubmit={handleSubmit(registerUser)}>
                         <div>
                             <label for="">Register as:</label>
-                            <select name="category" id="category"> 
+                            <select name="category" id="category" className="sel-ctn"> 
                                 <option value="choose on">Choose one</option>
                                 <option value="patient">Patient</option>
                                 <option value="doctor">Doctor</option>
                             </select>
                         </div>
-                        <div>   
-                           <input type="text" name='fullname' id='fullname' placeholder='Full Name'required { ...register('fullname', { required: true}) } />
+                        <br />
+                        <div> 
+                           <input type="text" className="effect" name='fullname' id='fullname' placeholder='Full Name'required { ...register('fullname', { required: true}) } />
+                           <span class="focus-border"></span>
                         </div>
                         <div>
                             <input type="email" name='email' id='email' placeholder='Email'required { ...register('email', { required: true})} /> 
@@ -121,18 +122,18 @@ const Register = () => {
                         <div>
                            <input type="password" name='password' id='password' placeholder='Password' required { ...register('password', { required: true })}   />
                         </div>              
-                        <button className= 'signup-btn' type='submit'>Sign Up</button>
+                        <div className="btn-ctn">
+                            <button className= 'signup-btn' type='submit'>Sign Up</button>
+                        </div>
                     </form>
-
                     <div className="signup-alt">
                         Already have an account? <Link to={routes.Login}> Login</Link> 
                     </div>
                 </div>
             </div>
-
         </div>
     );
   }
-}
+
 
 export default Register
