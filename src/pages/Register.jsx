@@ -1,14 +1,96 @@
 
 import '../styles/register.css';
-import React from 'react'
+import React, { useContext} from 'react'
 import { routes } from '../routes';
-import { Link } from 'react-router-dom';
-
+import { Link, useHistory } from 'react-router-dom';
+import { AppContext } from '../components/stateprovider';
+// import { useHistory } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
+import axios from 'axios';
 
 
 const Register = () => {
-   
+	const { register, handleSubmit } = useForm(
+        { reValidateMode: 'onSubmit'})
 
+    const history = useHistory();
+	const context = useContext(AppContext);
+	
+
+	// function registerUser({ email, password, confirmPassword })
+
+
+// const Register = () => {
+//     const { register, handleSubmit } = useForm();
+//     // const history = useHistory();
+
+   const registerUser = ({ email, password, confirmPassword,}) => {
+
+//         if (!email) {
+//             alert("Email required");
+//         } 
+
+//         if(!password) {
+//             alert("Password is required");
+//         }
+        
+//         if(password !== confirmPassword) {
+//             alert("Password is required");
+//         } 
+
+//         let userExist = localStorage.getItem(email)
+
+//         if (userExist) {
+//             return alert ('This user has already been registered')
+//         } alert('Registered Successfully')
+//             // history.push('/homepage')
+
+//     }
+
+//     const isEmailValid = (email) => {
+//         if( !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email)) {
+//             return false;
+//         } else {
+//             return true;
+//         }
+//     }
+    
+//     const isPasswordValid =  (password) => {
+//         if(password.length < 8) {
+//             return false;
+//         } else {
+//             return true;
+//         }
+//     }
+
+       const newUser = {
+             email: email,
+             password: password,
+             confirmPassword: confirmPassword,
+     };
+
+     axios.post('https://localhost:44377/api/v1/Auth',
+         newUser)
+         .then(result => {
+             console.log(result);
+             if (result.data.success) {
+                //  toast.success(result.data.massage);
+                 context.dispatch({
+                     type: 'REGISTER',
+                     payload: {
+                         userId: result.data.data.id,
+                         userEmail: result.data.data.email,
+                     },
+                 })
+             }
+         })
+         const newEmail = {
+             toEmail: newUser.email,
+             subject: "Lull Registration Notification",
+             body: "Dear " + newUser.email + ". Thank you for completing your registration"
+         }
+   
+   
     return (  
         <div className="auth">
             <div className="reg-left">
@@ -21,8 +103,7 @@ const Register = () => {
                     <h2>Welcome to LULL</h2>
                     <p className='signup-contents'>Create your account to get started</p>
                     
-                    <form action="#" className='signup-form' onSubmit >
-
+                    <form action="#" className='signup-form'onSubmit={handleSubmit(registerUser)}>
                         <div>
                             <label for="">Register as:</label>
                             <select name="category" id="category"> 
@@ -32,19 +113,15 @@ const Register = () => {
                             </select>
                         </div>
                         <div>   
-                            <input type="text" id="fullname" name="firstname" placeholder='Full Name'/> 
+                           <input type="text" name='fullname' id='fullname' placeholder='Full Name'required { ...register('fullname', { required: true}) } />
                         </div>
                         <div>
-                            <input type="date" id="birthday" name="birthday" placeholder= 'Date of Birth'/>
-                        </div>
-                        <div>
-                            <input type="email" name='email' id='email' placeholder='Email'/>  
+                            <input type="email" name='email' id='email' placeholder='Email'required { ...register('email', { required: true})} /> 
                         </div>
 
                         <div>
-                            <input type="password" name='password' id='password' placeholder='Password'/>
-                        </div>
-                        <textarea rows="4" cols="40" name="comment" form="usrform">Enter your Address here...</textarea>               
+                           <input type="password" name='password' id='password' placeholder='Password' required { ...register('password', { required: true })}   />
+                        </div>              
                         <button className= 'signup-btn' type='submit'>Sign Up</button>
                     </form>
 
@@ -56,6 +133,7 @@ const Register = () => {
 
         </div>
     );
+  }
 }
 
 export default Register
