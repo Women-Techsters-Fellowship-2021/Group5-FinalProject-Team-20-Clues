@@ -67,8 +67,12 @@
     line-height: 1.5;
     color: #5E5E5E;
 }
-.navbar__right .nav-notification,.nav-avatar {
+.navbar__right .nav-notification, .nav-avatar {
     cursor: pointer;
+}
+.nav-notification .dropdown-list {
+    width: 8rem;
+    /* background-color: red; */
 }
 
 @media only screen and (max-width: 978px) {

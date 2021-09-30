@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { FaRegSmile } from "react-icons/fa";
+import { FaRegSmile, FaRegUser  } from 'react-icons/fa';
+import { GiCancel } from 'react-icons/gi'
+import Dropdown from '../components/Dropdown';
 
 const Dashboard = () => {
 
@@ -35,6 +37,9 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
+
+            <Dropdown />
+
             {/* <!-- MAIN TITLE ENDS HERE --> */}
 
             {/* <!-- MAIN CARDS STARTS HERE --> */}
@@ -81,11 +86,25 @@ const Dashboard = () => {
                                     <img src="../images/icons/video2.svg" alt="video-icon" />
                                     <img src="../images/icons/call.png" alt="call-icon" />
                                 </div>
-                                <div className='loading-icons'>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
+                                <Dropdown
+                                    headerTitle={
+                                        <div className='loading-icons'>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    }
+                                    dropdownContent={
+                                        <ul className="dropdown-list">
+                                                <li className="dropdown-list-item dropdown-options-text">
+                                                    <FaRegUser className='dropdown-options-icon'/>Reschedule Appointment
+                                                </li>
+                                                <li className="dropdown-list-item dropdown-options-text dropdown-red">
+                                                    <GiCancel className='dropdown-options-icon'/>  Cancel Appointment
+                                                </li>
+                                        </ul>
+                                    }
+                                />
                             </div>
                         </div>
                         <div className="appointment-card">
@@ -111,11 +130,25 @@ const Dashboard = () => {
                                     <img src="../images/icons/video2.svg" alt="video-icon" />
                                     <img src="../images/icons/call.png" alt="call-icon" />
                                 </div>
-                                <div className='loading-icons'>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
+                                <Dropdown
+                                    headerTitle={
+                                        <div className='loading-icons'>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    }
+                                    dropdownContent={
+                                        <ul className="dropdown-list">
+                                                <li className="dropdown-list-item dropdown-options-text">
+                                                    <FaRegUser className='dropdown-options-icon'/>Reschedule Appointment
+                                                </li>
+                                                <li className="dropdown-list-item dropdown-options-text dropdown-red">
+                                                    <GiCancel className='dropdown-options-icon'/>  Cancel Appointment
+                                                </li>
+                                        </ul>
+                                    }
+                                />
                             </div>
                         </div>
                         <div className="appointment-card">
@@ -141,11 +174,25 @@ const Dashboard = () => {
                                     <img src="../images/icons/video2.svg" alt="video-icon" />
                                     <img src="../images/icons/call.png" alt="call-icon" />
                                 </div>
-                                <div className='loading-icons'>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
+                                <Dropdown
+                                    headerTitle={
+                                        <div className='loading-icons'>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    }
+                                    dropdownContent={
+                                        <ul className="dropdown-list">
+                                                <li className="dropdown-list-item dropdown-options-text">
+                                                    <FaRegUser className='dropdown-options-icon'/>Reschedule Appointment
+                                                </li>
+                                                <li className="dropdown-list-item dropdown-options-text dropdown-red">
+                                                    <GiCancel className='dropdown-options-icon'/>  Cancel Appointment
+                                                </li>
+                                        </ul>
+                                    }
+                                />
                             </div>
                         </div>
                     </div> 
@@ -240,33 +287,23 @@ const Dashboard = () => {
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Name of Specialist</th>
-                                    <th>Hospital Name</th>
-                                    <th>session Medium</th>
-                                    <th>Date</th>
-                                    <th>Duration</th>
+                                    <th>Program Title</th>
+                                    <th>Facilitator</th>
+                                    <th>Date Held</th>
+                                    <th>Time</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Dr Emeila Ken</td>
-                                    <td>NY Specialist Hospital</td>
-                                    <td>Video Call</td>
+                                    <td>How to Handle Stress</td>
+                                    <td>Dr. Jessica Smith</td>
                                     <td>{date}</td>
-                                    <td>01:16:20</td>
-                                </tr>
-                                <tr>
-                                    <td>Dr Emeila Ken</td>
-                                    <td>NY Specialist Hospital</td>
-                                    <td>Video Call</td>
-                                    <td>{date}</td>
-                                    <td>01:16:20</td>
+                                    <td>2PM GMT +1</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div> 
                 </div>
-                
             </section>
         </div>
     )
