@@ -50,11 +50,11 @@ const Login = ({email, password}) => {
                  })
              }
          })
-         const newEmail = {
-             toEmail: newUser.email,
-             subject: "Lull Welcome Notification",
-             body: "Dear " + newUser.email + ". Welcome to Lull"
-         }
+        //  const newEmail = {
+            //  toEmail: newUser.email,
+            //  subject: "Lull Welcome Notification",
+            //  body: "Dear " + newUser.email + ". Welcome to Lull"
+        //  }
    
 
     return (  
