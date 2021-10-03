@@ -90,9 +90,10 @@ const Homepage = () => {
                             <p>Get access to a wide range of evidence-based, contemporary online therapies tailored to your needs and circumstances.</p>
                             <div className="product-btn">
                             <button className="get-started2"> Get Started </button>
+                            <a href="tel:+2347069459796">
                            <button className="quick-call">
                            <img src={Phone} alt="Phone"/> <span> Quick call </span> 
-                           </button>
+                           </button></a>
                             </div>
            
                             </div>

@@ -1,0 +1,132 @@
+.video_call_section {
+  display: flex;
+}
+
+.call_images {
+  position: relative;
+}
+
+.lady1 {
+  position: relative;
+  height: 500px;
+}
+.lady2 {
+  position: absolute;
+  right: 0;
+  height: 150px;
+}
+
+.call_icons {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  border: 1px solid #dfe5ff;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+.call_conversation {
+  width: 100%;
+  margin: 0 3em 0 1.5em;
+}
+
+.add_member {
+  display: inline;
+  border: none;
+  color: #fff;
+  margin-top: 20%;
+  background-color: #49438d;
+  border-radius: 5px;
+  padding: 7px 6px;
+  float: right;
+}
+.button-cell {
+  width: 100%;
+  overflow: auto;
+}
+.convo_input {
+  width: 85%;
+  padding: 8px 5px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+}
+.convos {
+  background-color: #dfe5ff;
+  height: 450px;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.add_call {
+  position: absolute;
+  left: 20px;
+  z-index: 2;
+  top: 8px;
+  color: #313a63;
+  font-size: 15px;
+  display: flex;
+}
+.members_conversation {
+  position: relative;
+}
+.add_call h4 {
+  margin-left: 10px;
+}
+.group_line {
+  top: 4px;
+  right: 94px;
+  z-index: 2;
+  display: flex;
+  position: absolute;
+}
+.group_line h4 {
+  color: grey;
+  margin-top: 10px;
+  margin-left: 7px;
+}
+.members_conversation button {
+  outline: none;
+  background: transparent;
+  border: none;
+}
+.group_line h4 {
+  color: grey;
+}
+.type_msg {
+  display: flex;
+  gap: 0.8em;
+}
+.type_msg_input {
+  width: 70%;
+  padding: 7px 10px;
+  border-radius: 20px;
+  outline: navajowhite;
+  border: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .convo_input {
+    width: 100%;
+  }
+  .group_line {
+    right: 10px;
+  }
+  .group_line h4 {
+    font-size: 13px;
+    margin-top: 12px;
+    margin-left: 4px;
+  }
+  .add_call {
+    left: 5px;
+    top: 15px;
+  }
+  .add_call h4 {
+    margin-left: 3px;
+    font-size: 13px;
+  }
+}
