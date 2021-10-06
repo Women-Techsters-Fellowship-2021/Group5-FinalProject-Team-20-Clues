@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState, useEffect} from 'react';
 import { FaBars, FaRegUser, FaSearch } from 'react-icons/fa';
 import { IoSettingsOutline } from 'react-icons/io5';
 import { AiOutlineLogout } from 'react-icons/ai';
@@ -8,6 +9,16 @@ import { routes } from '../../routes';
 
 
 const Navbar = ({sidebarOpen, openSidebar}) => {
+
+    const [userInfo, setUserInfo] = useState(null);
+
+    useEffect(()=>{
+     const user =   JSON.parse(localStorage.getItem("userInformation")) 
+     console.log(user)
+     setUserInfo(user)
+
+}, [])
+
     return (
         <nav className="navbar">
             <div className="nav_icon" onClick={() => openSidebar()}>
@@ -36,7 +47,8 @@ const Navbar = ({sidebarOpen, openSidebar}) => {
                     />
                 </div>
                 <div className="user-info">
-                    <p className='user-name'>Jesutofunmi Adewole</p>
+                    {userInfo ? <p className='user-name'>{userInfo.userEmail}</p> : null}
+                    {/* <p className='user-name'>Jesutofunmi Adewole</p> */}
                     <h6 className='user-role'>User</h6>
                 </div>
                 <div className='nav-avatar'>

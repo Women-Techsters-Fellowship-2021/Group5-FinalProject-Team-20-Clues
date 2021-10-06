@@ -1,8 +1,7 @@
 import '../styles/register.css';
-import React, { useContext} from 'react';
+import React from 'react';
 import { routes } from '../routes';
 import { Link, useHistory } from 'react-router-dom';
-import { AppContext } from '../components/stateprovider';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 
@@ -12,8 +11,7 @@ const Register = () => {
         { reValidateMode: 'onSubmit'})
 
     const history = useHistory();
-	const context = useContext(AppContext);
-	
+
    const registerUser = ({ email, password, firstname, usercategory}) => {
 
 //         if (!email) {
