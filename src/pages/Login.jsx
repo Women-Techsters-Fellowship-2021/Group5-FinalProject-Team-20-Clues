@@ -1,31 +1,61 @@
-import React from "react";
+import React, { useContext} from 'react';
 import { Link, NavLink,} from "react-router-dom";
 import { routes } from "../routes";
 import { useForm } from "react-hook-form";
-// import { useHistory } from 'react-router-dom';
+import { AppContext } from '../components/stateprovider';
+import { useHistory } from 'react-router-dom';
+import axios from 'axios';
 
 
-const Login = () => {
+const Login = ({email, password}) => {
 
     const { register, handleSubmit} = useForm()
-    // const history = useHistory();
+          const history = useHistory();
+          const context = useContext(AppContext);
 
     const login = ({ email, password }) => {
-        const user = localStorage.getItem(email)
+        // const user = localStorage.getItem(email)
 
-        if(!user) {
-            return alert('An account for this email was not found')
-        }
+        // if(!user) {
+        //     return alert('An account for this email was not found')
+        // }
 
-        const userdata = (user)
+        // const userdata = (user)
 
-        if(password !== userdata.password) {
-            alert ('email or password is incorrect')
-        }
+        // if(password !== userdata.password) {
+        //     alert ('email or password is incorrect')
+        // }
         alert('Login successful')
-        // history.push('/homepage')
+        history.push('/patients')
     }
 
+      const newUser = {
+             email: email,
+             password: password,
+            //  confirmPassword: confirmPassword,
+     };
+
+  axios.post('https://localhost:44377//api/v1/Auth/login',
+         newUser)
+         .then(result => {
+             console.log(result);
+             if (result.data.success) {
+                //  toast.success(result.data.massage);
+                 context.dispatch({
+                     type: 'REGISTER',
+                     payload: {
+                         userId: result.data.data.id,
+                         userEmail: result.data.data.email,
+                     },
+                 })
+             }
+         })
+        //  const newEmail = {
+            //  toEmail: newUser.email,
+            //  subject: "Lull Welcome Notification",
+            //  body: "Dear " + newUser.email + ". Welcome to Lull"
+        //  }
+   
 
     return (  
         <div className="auth">

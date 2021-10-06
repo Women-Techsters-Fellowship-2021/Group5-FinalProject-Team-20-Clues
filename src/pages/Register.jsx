@@ -14,15 +14,7 @@ const Register = () => {
     const history = useHistory();
 	const context = useContext(AppContext);
 	
-
-	// function registerUser({ email, password, confirmPassword })
-
-
-// const Register = () => {
-//     const { register, handleSubmit } = useForm();
-//     // const history = useHistory();
-
-   const registerUser = ({ email, password, confirmPassword,}) => {
+   const registerUser = ({ email, password, firstname, usercategory}) => {
 
 //         if (!email) {
 //             alert("Email required");
@@ -41,9 +33,9 @@ const Register = () => {
 //         if (userExist) {
 //             return alert ('This user has already been registered')
 //         } alert('Registered Successfully')
-//             // history.push('/homepage')
+            // history.push('/patients')
 
-//     }
+    // }
 
 //     const isEmailValid = (email) => {
 //         if( !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email)) {
@@ -64,29 +56,33 @@ const Register = () => {
        const newUser = {
              email: email,
              password: password,
-             confirmPassword: confirmPassword,
+             firstname: firstname
+             
      };
 
      axios.post('https://localhost:44377/api/v1/Auth',
          newUser)
          .then(result => {
              console.log(result);
-             if (result.data.success) {
-                //  toast.success(result.data.massage);
-                 context.dispatch({
-                     type: 'REGISTER',
-                     payload: {
-                         userId: result.data.data.id,
-                         userEmail: result.data.data.email,
-                     },
-                 })
+              console.log(result.data.request.status)
+             if (result.data.request.status===201) {
+                 alert("user registration succesfully")
+                   history.push('/login')
+                //  context.dispatch({
+                //      type: 'REGISTER',
+                //      payload: {
+                //          userId: result.data.data.id,
+                //          userEmail: result.data.data.email,
+                //      },
+                //  })
+                   
              }
          })
-         const newEmail = {
-             toEmail: newUser.email,
-             subject: "Lull Registration Notification",
-             body: "Dear " + newUser.email + ". Thank you for completing your registration"
-         }
+        //  const newEmail = {
+            //  toEmail: newUser.email,
+        //      subject: "Lull Registration Notification",
+        //      body: "Dear " + newUser.email + ". Thank you for completing your registration"
+        //  }
         }
    
     return (  
@@ -104,15 +100,18 @@ const Register = () => {
                     <form action="#" className='signup-form'onSubmit={handleSubmit(registerUser)}>
                         <div>
                             <label for="">Register as:</label>
-                            <select name="category" id="category" className="sel-ctn"> 
+                            <select name="category" id="category" className="sel-ctn" 
+                             required { ...register('usercategory', { required: true}) } > 
+
                                 <option value="choose on">Choose one</option>
                                 <option value="patient">Patient</option>
                                 <option value="doctor">Doctor</option>
+                                
                             </select>
                         </div>
                         <br />
                         <div> 
-                           <input type="text" className="effect" name='fullname' id='fullname' placeholder='Full Name'required { ...register('fullname', { required: true}) } />
+                           <input type="text" className="effect" name='firstname' id='firstname' placeholder='First Name'required { ...register('firstname', { required: true}) } />
                            <span class="focus-border"></span>
                         </div>
                         <div>

@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.chat-navs,
+.message-section {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+.chat-navs {
+  border-bottom: 1px solid #dfe5ff;
+}
+.online-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.online_details {
+  display: flex;
+}
+.online_details img {
+  margin-right: 1em;
+  margin-left: 4em;
+}
+.online_text {
+  display: grid;
+}
+.online_text p {
+  font-size: 12px;
+}
+.online_icons img {
+  width: 15px;
+  margin: 5px;
+}
+.chat-content {
+  margin-top: 1em;
+  position: relative;
+}
+.all-chat,
+.all-chats {
+  color: #313a63;
+  padding: 20px;
+  background-color: #fff;
+}
+.chat_sidebar {
+  height: auto;
+  background-color: #fff;
+}
+.avatar_style,
+.avatar1_style {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  border-bottom: 1px solid #dfe5ff;
+}
+.video-call {
+  right: 20px;
+  position: absolute;
+}
+.add-call {
+  background-color: #49438d;
+  padding: 12px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.quick-call-mobile {
+  position: sticky;
+}
+.call-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.call_styles {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #dfe5ff;
+  gap: 20px;
+}
+.call-details {
+  display: flex;
+  gap: 10px;
+}
+.call-details span,
+.avatar_style span,
+.avatar1_style span {
+  font-size: 12px;
+  color: #9d9c9c;
+}
+.avatar_style img,
+.avatar1_style img {
+  width: 40px;
+}
+.avatar-content,
+.avatar1-content {
+  display: grid;
+  grid-gap: 8px;
+}
+.call-content h4,
+.avatar-content h4,
+.avatar1-content h4 {
+  color: #313a63;
+}
+.call-content h4 {
+  font-size: 14px;
+}
+.avatar-content p,
+.avatar1-content p {
+  font-size: 13px;
+}
+.active-tabview::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(75% + 2px);
+  height: 2px;
+  background: #49438d;
+}
+@media screen and (min-width: 768px) and (max-width: 4000px) {
+  .call_section,
+  .all-chat,
+  .calls-tab,
+  .block-tabview {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 700px) {
+  .all-chats,
+  .all-chat {
+    display: none;
+  }
+  .message-section {
+    display: grid;
+    width: 100%;
+  }
+  .chat-navs,
+  .message-section {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .online-content {
+    display: none;
+  }
+  .chat_sidebar {
+    width: 100%;
+  }
+  .chat-content {
+    display: none;
+  }
+}
