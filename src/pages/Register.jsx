@@ -1,5 +1,5 @@
 import '../styles/register.css';
-import React, { useContext} from 'react'
+import React, { useContext} from 'react';
 import { routes } from '../routes';
 import { Link, useHistory } from 'react-router-dom';
 import { AppContext } from '../components/stateprovider';
@@ -56,25 +56,18 @@ const Register = () => {
        const newUser = {
              email: email,
              password: password,
-             firstname: firstname
-             
+             firstname: firstname,
+             usercategory: usercategory
      };
 
      axios.post('https://localhost:44377/api/v1/Auth',
          newUser)
          .then(result => {
              console.log(result);
-              console.log(result.data.request.status)
-             if (result.data.request.status===201) {
+             if (result.request.status===201) {
+                  console.log(result.request.status)
                  alert("user registration succesfully")
                    history.push('/login')
-                //  context.dispatch({
-                //      type: 'REGISTER',
-                //      payload: {
-                //          userId: result.data.data.id,
-                //          userEmail: result.data.data.email,
-                //      },
-                //  })
                    
              }
          })
@@ -99,7 +92,7 @@ const Register = () => {
                     
                     <form action="#" className='signup-form'onSubmit={handleSubmit(registerUser)}>
                         <div>
-                            <label for="">Register as:</label>
+                            <label htmlFor="">Register as:</label>
                             <select name="category" id="category" className="sel-ctn" 
                              required { ...register('usercategory', { required: true}) } > 
 
@@ -112,7 +105,7 @@ const Register = () => {
                         <br />
                         <div> 
                            <input type="text" className="effect" name='firstname' id='firstname' placeholder='First Name'required { ...register('firstname', { required: true}) } />
-                           <span class="focus-border"></span>
+                           <span classame="focus-border"></span>
                         </div>
                         <div>
                             <input type="email" name='email' id='email' placeholder='Email'required { ...register('email', { required: true})} /> 
