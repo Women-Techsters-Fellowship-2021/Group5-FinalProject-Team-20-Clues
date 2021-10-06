@@ -5,6 +5,7 @@
 /* import layout component style */
 @import './styles/component/navbar.css';
 @import './styles/component/sidebar.css';
+@import './styles/component/dropdown.css';
 
 /* layout */
 @import './styles/layout/portal.css';
