@@ -1,12 +1,17 @@
-import { useState } from 'react';
+import { useState, useContext, useEffect} from 'react';
+import { AppContext } from '../components/stateprovider';
 import { FaRegSmile, FaRegUser  } from 'react-icons/fa';
 import { GiCancel } from 'react-icons/gi'
 import Dropdown from '../components/Dropdown';
+
 
 const Dashboard = () => {
 
     const [activeTab, setActiveTab] = useState(1);
     const [tabsClick, setTabsClick] = useState(1);
+    const [userInfo, setUserInfo] = useState(null);
+
+     const context = useContext(AppContext);
 
     const toggleTab = (index) => {
         setActiveTab(index);
@@ -14,6 +19,13 @@ const Dashboard = () => {
     const handleTabsClick = (index) => {
         setTabsClick(index);
     };
+    useEffect(()=>{
+        console.log(context)
+     const user =   JSON.parse(localStorage.getItem("userInformation")) 
+     console.log(user)
+     setUserInfo(user)
+
+}, [])
 
     const date= new Date().getDate() + '/' + (new Date().getMonth()+1) + '/' + new Date().getFullYear();
 
@@ -23,7 +35,7 @@ const Dashboard = () => {
             <div className="main-header">
                 <div className='greetings'>
                     <div className="greeting-one">
-                        <h4>Welcome Jesutofunmi,</h4>
+                      {userInfo ? <h4>{userInfo.userEmail}</h4> : null}
                         <p>Have a nice day and don't forget to take care of yourself!</p>
                     </div>
                     <div className="greeting-two">

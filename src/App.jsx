@@ -21,7 +21,7 @@ const App = () => {
 					<Route exact path="/" component={Homepage}/>
 
 					<Route path={routes.Login} component={Login}/>
-					<Route path={routes.Register} component={Register}/>rd
+					<Route path={routes.Register} component={Register}/>
 					<Route path={routes.ResetPassword} component={Resetpassword}/>
 					{/* {route to the patients dashboard}	 */}
 					<Route path={ routes.Portal} component={ Portal } />
