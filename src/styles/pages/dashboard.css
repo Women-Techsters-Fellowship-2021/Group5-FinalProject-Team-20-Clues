@@ -114,7 +114,7 @@
 }
 /* card sections */
 .appointment {
-    margin-top: 150px;
+    margin-top: 50px;
 }
 .section-intro {
     display: flex;
@@ -222,8 +222,11 @@
     margin-right: 10px;
     cursor: pointer;
 }
+.card-footer .dropdown-list{
+    width: 16rem;
+}
 .card-footer .loading-icons{
-    display: inherit;
+    display: flex;
     cursor: pointer;
 }
 .card-footer .loading-icons div {
