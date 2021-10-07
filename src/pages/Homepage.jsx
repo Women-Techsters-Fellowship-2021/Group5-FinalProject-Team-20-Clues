@@ -9,7 +9,10 @@ import progress from '../images/progress.png';
 import articles from '../images/write-articles.png';
 import tips from '../images/daily-tips.png';
 import community  from '../images/community.png';
-import drone from '../images/drone.png';
+import chattherapist from '../images/chat-therapist.png';
+import Account from '../images/create-account.png';
+import onlinetest from '../images/online-assessment.png';
+import findtherapist from '../images/find-therapist.png';
 import phone from '../images/contact-img.png';
 
 import Tests from '../images/icons/Assessment.png';
@@ -203,14 +206,14 @@ const Homepage = () => {
                 <div className="how-it-works-img">
                         <img src={Signup} alt="Mobile view of landing page"/>
                         <p>Sign Up for a Free Lull Account</p>
-                        <img className="drone" src={drone} alt="Mobile view of landing page"/>
+                        <img className="drone" src={Account} alt="Mobile view of landing page"/>
                         </div>
                        
                             
                         <div className="how-it-works-img">
                         <img src={Tests} alt="Mobile view of landing page"/>
                         <p>Take An online Assessment</p>
-                        <img className="drone" src={drone} alt="Mobile view of landing page"/>
+                        <img className="drone" src={onlinetest} alt="Mobile view of landing page"/>
                         </div>
                         </div>
 
@@ -218,7 +221,7 @@ const Homepage = () => {
         <div className="how-it-works-img">
         <img src={Therapy} alt="Mobile view of landing page"/>
         <p>Find Your Therapist</p>
-        <img className="drone" src={drone} alt="Mobile view of landing page"/>
+        <img className="drone" src={findtherapist} alt="Mobile view of landing page"/>
         
         </div>
       
@@ -226,7 +229,7 @@ const Homepage = () => {
         <div className="how-it-works-img">
         <img src={chat} alt="Mobile view of landing page"/>
         <p>Start Talking with your Therapist via Chat, Voice or Video Call</p>
-        <img className="drone" src={drone} alt="Mobile view of landing page"/>
+        <img className="drone" src={chattherapist} alt="Mobile view of landing page"/>
         </div>
         </div>
         </div>
