@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, NavLink} from 'react-router-dom';
+import { routes } from '../routes';
 import Navbar from '../components/Navbar';
 import '../styles/Homepage.css';
 
@@ -32,12 +34,17 @@ const Homepage = () => {
 
                 <div className="hero-section">
                     <div className="hero-text">
-                    <h1>Your Mental Health Is Our Priority</h1>
-                    <p>Start your journey to improving your mental well-being with online sessions and therapeutic self-care tools from qualified therapists.</p>
-                    <button className="get-started"> Get Started </button>
+                        <h1>Your Mental Health Is Our Priority</h1>
+                        <p>Start your journey to improving your mental well-being with online sessions and therapeutic self-care tools from qualified therapists.</p>
+                        <Link
+                            exact
+                            to={routes.Register}
+                        >
+                            <button className="get-started"> Get Started </button>
+                        </Link>
                     </div>
 
-                    </div>
+                </div>
                        
 
                     <section id="product">
@@ -92,10 +99,16 @@ const Homepage = () => {
                             <h1>Connect With A Licenced Therapist or Counselor</h1>
                             <p>Get access to a wide range of evidence-based, contemporary online therapies tailored to your needs and circumstances.</p>
                             <div className="product-btn">
-                            <button className="get-started2"> Get Started </button>
+                            <Link
+                                exact
+                                to={routes.Register}
+                            >
+                                <button className="get-started"> Get Started </button>
+                            </Link>
+                            <a href="tel:+2347069459796">
                            <button className="quick-call">
                            <img src={Phone} alt="Phone"/> <span> Quick call </span> 
-                           </button>
+                           </button></a>
                             </div>
            
                             </div>
@@ -109,8 +122,12 @@ const Homepage = () => {
                 <div className="inner">
                             <h1>A Broad Range of Therapies</h1>
                             <p>Get access to a wide range of evidence-based, contemporary online therapies tailored to your needs and circumstances.</p>
-                           <button className="get-started2"> Get Started </button>
-                      
+                            <Link
+                                exact
+                                to={routes.Register}
+                            >
+                                <button className="get-started"> Get Started </button>
+                            </Link>
                         </div>
 
                         <div className="responsive-data">
@@ -216,7 +233,12 @@ const Homepage = () => {
         </div>
         </div>
         </div>
-        <button className="how-it-works-btn"> Get Started </button>
+        <Link
+            exact
+            to={routes.Register}
+        >
+            <button className="get-started how-it-works-btn"> Get Started </button>
+        </Link>
 
         <div id="blog">
             <h2> Check Out Our Resources </h2>
@@ -302,7 +324,9 @@ const Homepage = () => {
            
                 <footer className="homepage-footer">
                     <div className="footer-logo">
-                        <h3>LOGO</h3>
+                        <NavLink exact to="/">
+                            <img src="../images/icons/Lull-white-Logo.svg" alt="brand-logo" />
+                        </NavLink>
                     </div>
 
                     <div className="company">

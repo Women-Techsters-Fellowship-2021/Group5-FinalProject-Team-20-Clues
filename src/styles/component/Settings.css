@@ -1,0 +1,177 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #f1f1f1;
+}
+
+.block-tabs {
+  display: flex;
+}
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  cursor: pointer;
+  background-color: #fff;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #9d9c9c;
+}
+
+.active-tabs {
+  color: #49438d;
+}
+
+.block-tabs button {
+  border: none;
+}
+.content-tabs {
+  flex-grow: 1;
+}
+.content {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
+}
+
+.account-setting p {
+  font-size: 13px;
+  color: #9e9e9e;
+  line-height: 27px;
+}
+.profile-tab img {
+  margin-top: 15px;
+}
+.upload-img {
+  background-color: #49438d;
+  margin: 0 40px 0 25px;
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.remove-img {
+  padding: 5px 6px;
+  border: 1px solid #49438d;
+  background-color: #fff;
+  color: #49438d;
+  border-radius: 5px;
+}
+.horizontal-line {
+  border-bottom: 1px solid #9e9e9e;
+  margin-top: 15px;
+}
+.register-form {
+  margin-top: 20px;
+}
+
+.register-grid {
+  display: flex;
+  width: auto;
+  gap: 1em;
+  margin: 0px 0px 30px 0px;
+}
+.register-flex {
+  display: grid;
+  width: 50%;
+}
+
+.register-input {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  border: 1px solid #dfe5ff !important;
+  background-color: transparent !important;
+}
+.register-input:focus,
+.register-msg:focus {
+  outline: none;
+}
+.register-msg {
+  background-color: #fff;
+}
+
+.register-textarea {
+  display: grid;
+}
+.register-input::placeholder {
+  color: black;
+}
+
+.profile-btn {
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #49438d;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  font-weight: bold;
+}
+::placeholder {
+  color: black;
+}
+
+@media screen and (min-width: 360px) and (max-width: 700px) {
+  .profile-tab {
+    display: grid;
+  }
+  .upload-img {
+    max-width: 50%;
+    background-color: #49438d;
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .remove-img {
+    padding: 5px 6px;
+    border: 1px solid #49438d;
+    background-color: #fff;
+    color: #49438d;
+    border-radius: 5px;
+    max-width: 50%;
+  }
+  .register-grid {
+    display: grid;
+    gap: 1em;
+  }
+
+  .register-flex {
+    display: grid;
+    width: 100%;
+  }
+
+  .register-textarea {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@700&family=Parisienne&family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,800;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* SIGN UP */
+.auth {
+  display: flex;
+}
+.signup-card{
+  padding: 0 20px;
+}
+.auth-cont {
+  padding: 43px 43px;
+  background: white;
+  box-shadow: 0 1px 6px rgb(61 65 84 / 15%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.auth-cont h2 {
+  color: #49438d;
+}
+.signup-card h2 {
+  font-family: montserrat;
+  font-weight: bold;
+}
+.signup-contents {
+  color: #49438d;
+  font-family: montserrat;
+  margin-bottom: 25px;
+  margin-top: 9px;
+}
+
+.signup-text {
+  font-size: 1rem;
+}
+#category {
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  border: 2px solid #0000000f;
+  border-radius: 5px;
+  width: 220px;
+  padding: 23px;
+  width: 220px;
+  padding: 13px;
+  margin-left: 5px;
+}
+.sel-ctn:focus-visible {
+  outline: none;
+  /* border: 2px solid #719ece;
+  box-shadow: 0 0 6px #719ece; */
+}
+.signup-form input {
+  width: 300px;
+  height: 45px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  border: 2px solid #0000000f;
+  display: block;
+}
+
+.signin-form input {
+  width: 300px;
+  height: 45px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  border: 2px solid #0000000f;
+  display: block;
+}
+
+.signup-form input:focus {
+  outline: none;
+  border: 2px solid #719ece;
+  box-shadow: 0px 0px 5px #8e8ef338;
+  border: 2px solid #0000000f;
+}
+
+.signin-form input:focus {
+  outline: none;
+  border: 2px solid #719ece;
+  box-shadow: 0px 0px 5px #8e8ef338;
+  border: 2px solid #0000000f;
+}
+
+.signin-card {
+  padding: 43px 43px;
+  background: white;
+  box-shadow: 0 1px 6px rgb(61 65 84 / 15%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #49438d;
+}
+.signup-form p {
+  color: red;
+  text-align: start;
+  font-size: 0.7rem;
+  padding: 0px 0 15px;
+}
+
+.signin-form p {
+  color: red;
+  text-align: start;
+  font-size: 0.7rem;
+  padding: 0px 0 15px;
+}
+
+.signup-btn {
+  color: #fff;
+  background-color: #49438d;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  border: none;
+  padding: 16px 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  width: 74%;
+}
+.btn-ctn {
+  text-align: center;
+}
+.signin-btn {
+  color: #fff;
+  background-color: #49438d;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  border: none;
+  padding: 12px 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.signup-alt {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+}
+
+.signin-alt {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+}
+
+.signup-alt a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.signin-alt a {
+  color: dark darkblue;
+  text-decoration: none;
+}
+
+.resetpassword-btn {
+  padding: 16px 50px;
+  border: 0.5px solid #000;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.resetpassword {
+  padding: 16px 50px;
+  background: #49438d;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-left: 22px;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.sign-in label {
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.sign-up label {
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.reg-left {
+  background-image: url(../images/reg-bg.jpg);
+  height: 100vh;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.reg-right {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  align-items: center;
+}
+
+.reset-left {
+  background-image: url(../images/password-reset.jpg);
+  height: 100vh;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.reset-right {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  align-items: center;
+  padding: 30px;
+}
+
+.auth__logo {
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .auth {
+      flex-direction: column;
+    }
+    .reg-left, .reset-left {
+      width: 100%;
+      height: 50vh;
+    }
+    .reg-right, .reset-right{
+      width: 100%;
+      margin-top: 30px;
+    }
+}

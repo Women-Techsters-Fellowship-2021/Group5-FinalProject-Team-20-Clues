@@ -1,0 +1,27 @@
+.dropdown-wrapper{
+    position: relative;
+}
+.dropdown-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: block;
+    margin-top: 30px;
+    width: 13.5rem;
+    position: absolute;
+    right: 0;
+}
+.dropdown-options-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0C023E;
+    padding-bottom: 10px; 
+}
+.dropdown-red {
+    color: #CA1A0E;
+}
+.dropdown-options-icon {
+    margin-right: 20px;
+    vertical-align: text-bottom;
+}
